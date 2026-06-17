@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Niğde Web Sitesi Potansiyel İşletmeler | EB Digital Studio</title>
+<meta name="description" content="Niğde'de bağımsız web sitesi bulunmayan veya yalnız sosyal medya/pazar yeri kullanan yüksek potansiyelli işletmeler için lead takip paneli.">
+<style>
+:root {
+  --bg:#060913; --panel:#0d1324; --panel2:#111a2f; --text:#f6f8ff; --muted:#9aa6c2;
+  --line:rgba(255,255,255,.09); --accent:#67e8f9; --accent2:#8b5cf6; --good:#34d399;
+  --warn:#fbbf24; --danger:#fb7185; --shadow:0 24px 80px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+radial-gradient(circle at 12% 10%,rgba(103,232,249,.12),transparent 28rem),
+radial-gradient(circle at 88% 16%,rgba(139,92,246,.14),transparent 32rem),var(--bg);
+color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+a{color:inherit}.shell{max-width:1480px;margin:auto;padding:28px}
+.hero{display:grid;grid-template-columns:1.6fr .9fr;gap:22px;align-items:stretch;margin-bottom:22px}
+.panel{background:linear-gradient(180deg,rgba(17,26,47,.88),rgba(8,13,26,.9));border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);backdrop-filter:blur(16px)}
+.hero-main{padding:34px;position:relative;overflow:hidden}
+.hero-main:after{content:"";position:absolute;inset:auto -10% -55% 35%;height:340px;background:radial-gradient(circle,rgba(103,232,249,.22),transparent 68%);pointer-events:none}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid rgba(103,232,249,.26);border-radius:999px;background:rgba(103,232,249,.07);color:#c7f9ff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(32px,5vw,66px);line-height:1.02;margin:20px 0 14px;max-width:880px}
+.grad{background:linear-gradient(90deg,var(--accent),#fff,var(--accent2));-webkit-background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:860px;font-size:17px}
+.stats{padding:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.stat{padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+.stat b{font-size:30px;display:block}.stat span{color:var(--muted);font-size:13px}
+.notice{padding:18px 22px;margin:18px 0;color:#d6def5}
+.toolbar{padding:16px;display:grid;grid-template-columns:1.4fr repeat(3,minmax(150px,.55fr)) auto;gap:10px;position:sticky;top:10px;z-index:20}
+input,select,button,textarea{font:inherit}.control{width:100%;border:1px solid var(--line);background:#0a1020;color:var(--text);padding:12px 14px;border-radius:14px;outline:none}
+.control:focus{border-color:rgba(103,232,249,.55);box-shadow:0 0 0 4px rgba(103,232,249,.08)}
+button{cursor:pointer}.btn{border:1px solid var(--line);background:linear-gradient(135deg,rgba(103,232,249,.16),rgba(139,92,246,.14));color:#fff;border-radius:14px;padding:11px 14px;font-weight:800}
+.btn:hover{border-color:rgba(103,232,249,.45);transform:translateY(-1px)}
+.summary{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:18px 4px}
+.summary strong{font-size:20px}.summary small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{padding:22px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0 auto auto 0;width:4px;height:100%;background:linear-gradient(var(--accent),var(--accent2))}
+.card-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.card h2{margin:0 0 5px;font-size:20px}.cat{color:var(--muted);font-size:13px}
+.score{min-width:70px;text-align:center;border-radius:16px;padding:9px 8px;border:1px solid rgba(103,232,249,.23);background:rgba(103,232,249,.07)}
+.score b{font-size:22px;display:block;color:#bdf8ff}.score span{font-size:10px;color:var(--muted)}
+.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:16px 0}
+.meta div{padding:11px 12px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.025)}
+.meta small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}
+.meta a{text-decoration:none;color:#e9faff}
+.tag{display:inline-flex;padding:5px 9px;border-radius:999px;border:1px solid var(--line);font-size:11px;margin:0 6px 6px 0}
+.tag.high{border-color:rgba(52,211,153,.32);color:#a7f3d0;background:rgba(52,211,153,.07)}
+.copy{margin:12px 0;padding:13px;border-left:2px solid rgba(103,232,249,.35);background:rgba(255,255,255,.02);border-radius:0 12px 12px 0;color:#c7d2ea}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.actions a,.actions button{text-decoration:none;border:1px solid var(--line);background:#0a1020;color:#fff;padding:9px 11px;border-radius:11px;font-weight:700;font-size:13px}
+.actions a.primary{background:linear-gradient(135deg,#0891b2,#6d28d9);border-color:transparent}
+.crm{display:grid;grid-template-columns:150px 1fr;gap:8px;margin-top:15px}.note{min-height:42px;resize:vertical}
+.footer{margin:28px 0 10px;text-align:center;color:var(--muted)}.empty{padding:60px;text-align:center;color:var(--muted);display:none}
+@media(max-width:1050px){.hero{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}}
+@media(max-width:620px){.shell{padding:14px}.hero-main{padding:24px}.toolbar{grid-template-columns:1fr;position:static}.stats{grid-template-columns:1fr 1fr;padding:14px}.meta{grid-template-columns:1fr}.crm{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <section class="hero">
+    <div class="panel hero-main">
+      <span class="badge">EB Digital Studio · Lead Intelligence</span>
+      <h1>Niğde'de web sitesi potansiyeli yüksek <span class="grad">işletmeler</span></h1>
+      <p>Bağımsız resmî sitesi bulunmayan veya yalnızca Instagram / pazar yeri profili kullanan işletmeler için hazırlanmış satış ve takip paneli. Veriler kamuya açık kaynaklardan derlenmiştir.</p>
+    </div>
+    <div class="panel stats">
+      <div class="stat"><b id="totalStat">41</b><span>Toplam lead</span></div>
+      <div class="stat"><b id="veryHighStat">22</b><span>Çok yüksek öncelik</span></div>
+      <div class="stat"><b id="categoryStat">16</b><span>Sektör</span></div>
+      <div class="stat"><b id="contactedStat">0</b><span>İletişime geçilen</span></div>
+    </div>
+  </section>
+
+  <div class="panel notice">
+    <strong>Önemli:</strong> “Site bulunamadı” ifadesi, 17 Haziran 2026 tarihli açık web taramasında bağımsız resmî web sitesi görünmediği anlamına gelir; kesin yokluk garantisi değildir. İletişimden hemen önce işletme adını tekrar arat.
+  </div>
+
+  <section class="panel toolbar">
+    <input class="control" id="search" placeholder="İşletme, sektör, adres veya telefon ara…">
+    <select class="control" id="category"><option value="">Tüm sektörler</option></select>
+    <select class="control" id="priority"><option value="">Tüm öncelikler</option><option>Çok Yüksek</option><option>Yüksek</option></select>
+    <select class="control" id="crmFilter"><option value="">Tüm durumlar</option><option>Yeni</option><option>İletişime Geçildi</option><option>Takip</option><option>İlgileniyor</option><option>Kazanıldı</option><option>Uygun Değil</option></select>
+    <button class="btn" id="exportBtn">CSV indir</button>
+  </section>
+
+  <div class="summary">
+    <div><strong id="resultCount">41 işletme</strong><br><small>Puana göre sıralandı</small></div>
+    <small>Durumlar ve notlar bu tarayıcıda otomatik kaydedilir.</small>
+  </div>
+
+  <main class="grid" id="grid"></main>
+  <div class="panel empty" id="empty">Bu filtrelere uygun işletme bulunamadı.</div>
+  <footer class="footer">EB Digital Studio · Niğde İşletme Adayları · Güncelleme: 17.06.2026</footer>
+</div>
+
+<script>
+const leads = [{"name": "Niğdent Ağız ve Diş Sağlığı Polikliniği", "category": "Diş Kliniği", "phone": "0544 123 51 51", "instagram": "https://www.instagram.com/nigdentadsp/", "address": "Aşağı Kayabaşı Mah. Atatürk Bulv. 46/3, Niğde", "score": 98, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Sağlık hizmetinde güven, uzmanlık, tedavi açıklaması ve randevu kritik.", "solution": "Hekim profilleri, tedaviler, online randevu, KVKK", "package": "Signature Web Experience", "source": "https://www.instagram.com/nigdentadsp/"}, {"name": "Net Emlak 511", "category": "Emlak", "phone": "0546 447 20 31 / 0533 795 46 51", "instagram": "https://www.instagram.com/net_emlak511/", "address": "Niğde Merkez", "score": 97, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "İlanların yalnız sosyal medya ve portallara bağlı kalması marka bağımsızlığını azaltıyor.", "solution": "Filtrelenebilir ilan sitesi, WhatsApp talep formu, mülk ekleme paneli", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/net_emlak511/"}, {"name": "Luxe Life Güzellik Merkezi", "category": "Güzellik", "phone": "0501 036 04 51", "instagram": "https://www.instagram.com/luxelife_nigde/", "address": "Ayhan Şahenk Bulvarı 15, Niğde Merkez", "score": 96, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Randevu ve kampanya odaklı hizmet; aktif sosyal medya ve geniş hizmet listesi var.", "solution": "Online randevu, hizmet paketleri, kampanya sayfaları, WhatsApp dönüşümü", "package": "Marka Deneyimi / Signature", "source": "https://www.instagram.com/luxelife_nigde/"}, {"name": "Yurt Emlak Niğde", "category": "Emlak", "phone": "0533 426 53 44 / 0388 232 79 34", "instagram": "https://www.instagram.com/yurtemlaknigde/", "address": "Esenbey Mah. Paşakapı Cad. 23/C, Niğde Merkez", "score": 96, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı; pazar yeri profili var", "reason": "1982'den beri faaliyet gösteren köklü marka; bağımsız web sitesi güveni artırır.", "solution": "Köklü marka hikâyesi, ilan yönetimi, danışmanlık başvurusu", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/yurtemlaknigde/"}, {"name": "Niğde Emlak Merkezi", "category": "Emlak", "phone": "0388 232 99 55 / 0543 669 12 99", "instagram": "", "address": "Niğde Merkez", "score": 95, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı; emlak portallarında aktif", "reason": "Geniş ilan portföyü mevcut; portal bağımlılığını azaltacak kendi altyapısı değerli.", "solution": "İlan yönetimi, gelişmiş filtreleme, arama bildirimleri", "package": "Özel Dijital Sistem", "source": "https://www.hepsiemlak.com/emlak-ofisi/nigde-emlak-merkezi-692268"}, {"name": "Otel Rumeli Niğde", "category": "Otel", "phone": "0388 213 11 42 / 0537 241 00 99", "instagram": "https://www.instagram.com/otel_rumeli/", "address": "Niğde Merkez", "score": 95, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Konaklama işletmesinde Google görünürlüğü ve rezervasyon talebi doğrudan gelir sağlar.", "solution": "Oda tanıtımı, fiyat/rezervasyon talebi, konum ve turizm rehberi", "package": "Signature Web Experience", "source": "https://www.instagram.com/otel_rumeli/"}, {"name": "Yuyi Beaute", "category": "Güzellik", "phone": "0545 617 51 00", "instagram": "https://www.instagram.com/yuyibeaute/", "address": "Niğde Merkez", "score": 95, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yüksek takipçi görünürlüğü ve randevu bazlı çoklu hizmet yapısı.", "solution": "Premium marka sitesi, online randevu, işlem öncesi/sonrası galeri", "package": "Signature Web Experience", "source": "https://www.instagram.com/yuyibeaute/"}, {"name": "Acar Emlak Niğde", "category": "Emlak", "phone": "0538 520 52 19", "instagram": "https://www.instagram.com/acaremlaknigde/", "address": "Niğde Merkez", "score": 94, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Aktif portföyü olan emlak ofislerinde kendi ilan sitesi doğrudan satış getirir.", "solution": "İlan kataloğu, arama filtreleri, ekspertiz talebi, WhatsApp", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/acaremlaknigde/"}, {"name": "Diş Hekimi Selin Koçer", "category": "Diş Kliniği", "phone": "0501 334 51 35", "instagram": "https://www.instagram.com/nigdestetikdishekimi/", "address": "Niğde Merkez", "score": 94, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Gülüş tasarımı ve estetik diş hizmetleri yüksek değerli ve görsel odaklı.", "solution": "Kişisel hekim markası, tedaviler, randevu, vaka galerisi", "package": "Signature Web Experience", "source": "https://www.instagram.com/nigdestetikdishekimi/"}, {"name": "Elit Düğün Salonu / Elit Bahçe", "category": "Düğün & Organizasyon", "phone": "0555 030 07 51", "instagram": "https://www.instagram.com/elitsalon51/", "address": "Niğde", "score": 94, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Görsel galeri, paketler ve tarih uygunluğu talebi doğrudan satış getirir.", "solution": "Salon galerisi, paketler, tarih talebi, WhatsApp rezervasyon", "package": "Signature Web Experience", "source": "https://www.instagram.com/elitsalon51/"}, {"name": "Aves İç Mimarlık", "category": "Mimarlık & İç Mimarlık", "phone": "0506 889 00 51", "instagram": "https://www.instagram.com/aves_icmimarlik/", "address": "Niğde", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "3D görselleştirme ve anahtar teslim projeler portföy sitesiyle çok güçlü sunulur.", "solution": "Proje portföyü, önce/sonra, hizmetler, keşif formu", "package": "Signature Web Experience", "source": "https://www.instagram.com/aves_icmimarlik/"}, {"name": "Denta Home Diş Kliniği", "category": "Diş Kliniği", "phone": "0506 256 09 29", "instagram": "https://www.instagram.com/dentahomenigde/", "address": "Aşağı Kayabaşı, Niğde", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Klinik güveni ve online randevu için kurumsal web sitesi güçlü ihtiyaç.", "solution": "Tedaviler, hekimler, randevu, hasta bilgilendirme", "package": "Signature Web Experience", "source": "https://www.instagram.com/dentahomenigde/"}, {"name": "Fit House VIP Fitness Center", "category": "Fitness & Pilates", "phone": "0541 809 23 92", "instagram": "https://www.instagram.com/fithousevip/", "address": "Niğde Merkez", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Fitness, reformer, zumba ve kadınlara özel bölüm; üyelik dönüşümü yüksek olabilir.", "solution": "Üyelik paketleri, ders programı, eğitmenler, deneme dersi formu", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/fithousevip/"}, {"name": "Seval Emlak Niğde", "category": "Emlak", "phone": "0541 507 45 74 / 0546 507 45 74", "instagram": "https://www.instagram.com/sevalemlaknigde/", "address": "Niğde Merkez", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "2006'dan beri hizmet veren köklü marka; kurumsal güven sitesi potansiyeli yüksek.", "solution": "Kurumsal emlak sitesi, portföy, değerleme başvurusu, danışman profilleri", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/sevalemlaknigde/"}, {"name": "Twins Beauty Center", "category": "Güzellik", "phone": "0554 533 41 51", "instagram": "https://www.instagram.com/twinss_beauty_center/", "address": "Niğde Merkez", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Görsel olarak güçlü sektör; kampanya ve randevu sayfası yüksek dönüşüm sağlayabilir.", "solution": "Hizmet kataloğu, randevu formu, kampanya landing page", "package": "Marka Deneyimi", "source": "https://www.instagram.com/twinss_beauty_center/"}, {"name": "Şehrazat Deluxe", "category": "Düğün & Organizasyon", "phone": "0542 499 76 99", "instagram": "https://www.instagram.com/sehrazatdeluxe/", "address": "Niğde", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Lüks düğün konumlandırması güçlü bir premium web sunumu gerektirir.", "solution": "Sinematik mekan tanıtımı, paketler, galeri, rezervasyon", "package": "Signature Web Experience", "source": "https://www.instagram.com/sehrazatdeluxe/"}, {"name": "CRP Spor Merkezi", "category": "Fitness & Cimnastik", "phone": "0543 213 51 00", "instagram": "https://www.instagram.com/crpspormerkezi/", "address": "Niğde Merkez", "score": 92, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Çocuk cimnastiği ve annelere pilates; ayrı hedef kitleler için güçlü web potansiyeli.", "solution": "Ders kayıt formu, yaş grupları, program takvimi, galeri", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/crpspormerkezi/"}, {"name": "Niğde Veteriner Kliniği", "category": "Veteriner", "phone": "0545 265 38 51", "instagram": "https://www.instagram.com/nigdeveterinerklinigi/", "address": "Eski Fertek Yolu, Niğde", "score": 92, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "7/24 hizmet, acil bilgiler ve randevu yapısı için web sitesi uygun.", "solution": "Acil iletişim, hizmetler, randevu, hekim tanıtımı", "package": "Marka Deneyimi", "source": "https://www.instagram.com/nigdeveterinerklinigi/"}, {"name": "Çalışkan Akademi Eğitim Kurumları", "category": "Eğitim", "phone": "0535 765 21 51", "instagram": "https://www.instagram.com/caliskan_egitim/", "address": "Aşağı Kayabaşı Mah., Niğde Merkez", "score": 92, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kayıt, program, öğretmen ve başarı içerikleri için web sitesi çok değerlidir.", "solution": "Online ön kayıt, programlar, öğretmenler, duyurular", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/caliskan_egitim/"}, {"name": "3X Gym Pilates & Fitness", "category": "Fitness & Pilates", "phone": "0531 811 16 55", "instagram": "https://www.instagram.com/3xgym/", "address": "Dr. Sami Yağız Cad., Aşağı Kayabaşı, Niğde", "score": 91, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Geniş çalışma saatleri ve çoklu hizmet; online üyelik talebi uygun.", "solution": "Üyelik paketleri, programlar, eğitmen profilleri, WhatsApp", "package": "Marka Deneyimi", "source": "https://www.instagram.com/3xgym/"}, {"name": "Niğde Çözüm Kurs", "category": "Eğitim", "phone": "0545 532 40 41 / 0388 502 01 03", "instagram": "https://www.instagram.com/nigdecozumkurs/", "address": "Niğde Merkez", "score": 91, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yoğun içerik ve kayıt dönemi; arama görünürlüğü yeni öğrenci getirir.", "solution": "Kurs programları, deneme sınavı başvurusu, online ön kayıt", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/nigdecozumkurs/"}, {"name": "Santolina Restaurant", "category": "Kafe & Restoran", "phone": "0542 502 24 44", "instagram": "https://www.instagram.com/santolinarestaurant/", "address": "Niğde Merkez", "score": 91, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Premium gastronomi konumlandırması; kaliteli web sitesi marka algısını güçlendirir.", "solution": "Premium menü, rezervasyon, etkinlik ve fotoğraf galerisi", "package": "Signature Web Experience", "source": "https://www.instagram.com/santolinarestaurant/"}, {"name": "Lotus Pilates Studio", "category": "Pilates", "phone": "0545 205 98 01", "instagram": "https://www.instagram.com/pilateslotusstudio/", "address": "Niğde Merkez", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Reformer ve klinik pilates için güven, uzmanlık ve randevu odaklı site gerekir.", "solution": "Randevu, ders paketleri, eğitmen tanıtımı, sık sorulan sorular", "package": "Marka Deneyimi", "source": "https://www.instagram.com/pilateslotusstudio/"}, {"name": "Prenses Güzellik Salonu", "category": "Güzellik", "phone": "0546 788 66 52", "instagram": "https://www.instagram.com/prenses_guzellik_salonuuu/", "address": "Niğde Merkez", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Lazer, cilt bakımı ve kalıcı makyaj gibi yüksek marjlı hizmetler sunuyor.", "solution": "Randevu, fiyat talebi, hizmet açıklamaları, Google görünürlüğü", "package": "Marka Deneyimi", "source": "https://www.instagram.com/prenses_guzellik_salonuuu/"}, {"name": "Saklı Bahçe Kafe", "category": "Kafe & Organizasyon", "phone": "0555 152 36 73", "instagram": "https://www.instagram.com/saklibahcenigde/", "address": "Fertek, Niğde", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kahvaltı, özel gün ve organizasyon hizmetleri tek sitede paketlenebilir.", "solution": "Menü, organizasyon paketleri, rezervasyon ve galeri", "package": "Marka Deneyimi", "source": "https://www.instagram.com/saklibahcenigde/"}, {"name": "Yürekli Mimarlık", "category": "Mimarlık & İç Mimarlık", "phone": "0552 095 34 02", "instagram": "", "address": "Yukarı Kayabaşı Mah., Serin Sok., Kayalı Park yanı, Niğde", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yeni/yerel mimarlık ofisinde proje portföyü güven ve teklif talebi üretir.", "solution": "Kurumsal portföy, proje galerisi, hizmetler, teklif formu", "package": "Signature Web Experience", "source": "https://www.instagram.com/reel/C6RHHqZNBUA/"}, {"name": "Günay Pet Veteriner Kliniği", "category": "Veteriner", "phone": "0531 928 58 20", "instagram": "https://www.instagram.com/veteriner.gunay/", "address": "Niğde", "score": 89, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "7/24 hizmet ve güven odaklı sağlık iletişimi web sitesinde daha güçlü olur.", "solution": "Randevu, acil arama, hizmetler, sık sorulan sorular", "package": "Marka Deneyimi", "source": "https://www.instagram.com/veteriner.gunay/"}, {"name": "Kuantum Eğitim YKS / LGS", "category": "Eğitim", "phone": "0551 459 51 51", "instagram": "https://www.instagram.com/nigdekuantumegitim/", "address": "Derbent Mezarlığı Karşısı, Migros Üstü, Niğde", "score": 89, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Öğrenci ve veli güvenini artıracak program/başarı/kayıt yapısı uygun.", "solution": "Ön kayıt, başarılar, kadro, program ve duyuru sistemi", "package": "Marka Deneyimi", "source": "https://www.instagram.com/nigdekuantumegitim/"}, {"name": "Arda Çayan Sports Center", "category": "Fitness & Spor", "phone": "0506 096 22 86", "instagram": "https://www.instagram.com/ardacayansportscenter/", "address": "Aşağı Kayabaşı Mah., Bor Yolu, Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yerel spor merkezi için üyelik ve tanıtım sayfaları dönüşüm sağlar.", "solution": "Salon tanıtımı, paketler, eğitmenler, deneme dersi", "package": "Marka Deneyimi", "source": "https://www.instagram.com/p/DM-nWPwIWmS/"}, {"name": "Göktürk Esen Bahçe Restaurant & Cafe", "category": "Kafe & Organizasyon", "phone": "0538 482 12 69", "instagram": "https://www.instagram.com/esenbahce_gokturk/", "address": "Niğde–Bor Yolu", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Aile mekânı, oyun alanı ve organizasyon özellikleri ayrı sayfalarda satılabilir.", "solution": "Rezervasyon, mekan tanıtımı, organizasyon paketleri", "package": "Marka Deneyimi", "source": "https://www.instagram.com/reel/DLUhDbLtHt2/"}, {"name": "Koyunlu Mobilya", "category": "Mobilya", "phone": "0535 014 15 23", "instagram": "https://www.instagram.com/ergul.mobilya.nigde/", "address": "Bor Yolu 1. km, PTT Kargo karşısı, Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Ürün kataloğu ve WhatsApp teklif sistemi mağaza trafiğini artırabilir.", "solution": "Ürün katalogları, koleksiyonlar, fiyat talebi, mağaza bilgisi", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/ergul.mobilya.nigde/"}, {"name": "Masal Dizayn / Masal Davet", "category": "Düğün & Organizasyon", "phone": "0543 344 30 51", "instagram": "https://www.instagram.com/masal_dizaynn/", "address": "Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Organizasyon görselleri ve paketlerinin tek yerde sunulması teklif sayısını artırır.", "solution": "Portföy, konsept paketleri, teklif formu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/masal_dizaynn/"}, {"name": "Yavuzpet Veteriner Kliniği", "category": "Veteriner", "phone": "0551 596 67 85 / 0531 347 50 68", "instagram": "https://www.instagram.com/nigde_yavuzpet_veterinerlik/", "address": "Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kedi, köpek ve çiftlik hizmetleri farklı hedef kitlelere özel sunulabilir.", "solution": "Hizmet kategorileri, 7/24 iletişim, yerinde hizmet formu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/nigde_yavuzpet_veterinerlik/"}, {"name": "Babil Cafe Bistro", "category": "Kafe & Restoran", "phone": "0530 707 01 29", "instagram": "https://www.instagram.com/babilcafebistro/", "address": "Niğde Merkez", "score": 87, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yoğun sosyal medya içeriği; dijital menü ve rezervasyon dönüşümü artırabilir.", "solution": "QR menü, rezervasyon, etkinlik duyurusu, Google SEO", "package": "Marka Deneyimi", "source": "https://www.instagram.com/babilcafebistro/"}, {"name": "Borvet Veteriner Kliniği", "category": "Veteriner", "phone": "0536 653 10 51", "instagram": "https://www.instagram.com/borvetveteriner_/", "address": "Bor Yolu, Ramada Otel karşısı, Niğde", "score": 87, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Konum ve randevu bilgisinin Google'da güçlü görünmesi gerekir.", "solution": "Klinik tanıtımı, randevu, acil iletişim, harita", "package": "Marka Deneyimi", "source": "https://www.instagram.com/borvetveteriner_/"}, {"name": "Tekin Mobilya Niğde", "category": "Mobilya", "phone": "0388 213 61 59 / 0541 332 51 00", "instagram": "https://www.instagram.com/tekinmobilyanigde/", "address": "Bor Yolu, Niğde", "score": 87, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "İki lokasyon ve ürün çeşitliliği dijital katalog için uygun.", "solution": "Katalog, mağaza/şube sayfaları, WhatsApp fiyat talebi", "package": "Marka Deneyimi", "source": "https://www.instagram.com/tekinmobilyanigde/"}, {"name": "Vega Özel Öğretim Kursu", "category": "Eğitim", "phone": "0552 104 96 52 / 0505 582 11 01", "instagram": "https://www.instagram.com/vegaozelogretimkursu/", "address": "Sarıköprü Mah. Zemerdin Sok. 20/39, Niğde", "score": 87, "priority": "Yüksek", "status": "Bağımsız yerel site bulunamadı", "reason": "Sınıf sistemi ve kayıt kampanyaları web üzerinden daha profesyonel sunulabilir.", "solution": "Kurs tanıtımı, kayıt formu, duyuru ve kampanya sayfaları", "package": "Marka Deneyimi", "source": "https://www.instagram.com/reel/DVLBvf1iudH/"}, {"name": "CTN Mimarlık", "category": "Mimarlık & İç Mimarlık", "phone": "Instagram DM", "instagram": "https://www.instagram.com/archctn.design/", "address": "Niğde", "score": 86, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Mimari proje, danışmanlık ve dekorasyon hizmetleri görsel portföy gerektirir.", "solution": "Proje galerisi, hizmetler, danışmanlık ve teklif formu", "package": "Signature Web Experience", "source": "https://www.instagram.com/archctn.design/"}, {"name": "Öz Çavuş Mobilya / Wellhome", "category": "Mobilya & Dekorasyon", "phone": "0542 681 10 69 / 0388 232 20 24", "instagram": "https://www.instagram.com/ozcavusmobilya/", "address": "Niğde", "score": 86, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Mobilya, mutfak, PVC ve kapı hizmetleri tek dijital katalogda toplanabilir.", "solution": "Hizmet kategorileri, proje galerisi, keşif ve teklif formu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/ozcavusmobilya/"}, {"name": "Metot Kurs Merkezi", "category": "Eğitim", "phone": "0507 265 84 70", "instagram": "https://www.instagram.com/metotkursmerkezi/", "address": "Niğde Merkez", "score": 85, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kayıt ve program bilgileri yalnız sosyal medyada kalıyor.", "solution": "Ön kayıt, sınıf programları, öğretmen kadrosu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/reel/CghH8TqDWjz/"}, {"name": "Tam'Bu Mobilya", "category": "Mobilya", "phone": "0538 668 16 51", "instagram": "https://www.instagram.com/tambumobilya.nigde/", "address": "Niğde", "score": 84, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Özel üretim ve sipariş odaklı yapı için proje galerisi ve teklif formu uygundur.", "solution": "Proje galerisi, özel sipariş formu, ürün koleksiyonları", "package": "Marka Deneyimi", "source": "https://www.instagram.com/tambumobilya.nigde/"}];
+const KEY = "eb_nigde_leads_v1";
+const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+const grid = document.getElementById("grid");
+const search = document.getElementById("search");
+const category = document.getElementById("category");
+const priority = document.getElementById("priority");
+const crmFilter = document.getElementById("crmFilter");
+const empty = document.getElementById("empty");
+
+[...new Set(leads.map(x=>x.category))].sort().forEach(c=>{
+  const o=document.createElement("option"); o.value=o.textContent=c; category.appendChild(o);
+});
+
+function phoneDigits(v){
+  const first=(v.match(/0\d{3}\s?\d{3}\s?\d{2}\s?\d{2}/)||[])[0]||"";
+  return first.replace(/\D/g,"").replace(/^0/,"90");
+}
+function telDigits(v){
+  const first=(v.match(/0\d{3}\s?\d{3}\s?\d{2}\s?\d{2}/)||[])[0]||"";
+  return first.replace(/\D/g,"");
+}
+function esc(s){return String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function saveState(name, field, value){
+  saved[name]=saved[name]||{};
+  saved[name][field]=value;
+  localStorage.setItem(KEY, JSON.stringify(saved));
+  updateStats();
+}
+function updateStats(){
+  document.getElementById("contactedStat").textContent =
+    Object.values(saved).filter(x=>x.status && x.status!=="Yeni").length;
+}
+function card(l){
+  const state=saved[l.name]||{};
+  const crm=state.status||"Yeni";
+  const note=state.note||"";
+  const wa=phoneDigits(l.phone);
+  const tel=telDigits(l.phone);
+  const message=encodeURIComponent(`Merhaba, ben Efecan Berber. EB Digital Studio olarak Niğde'deki işletmelere özel web sitesi ve dijital sistemler geliştiriyorum. ${l.name} için sektörünüze uygun kısa bir site ön izlemesi hazırlamak isterim. Uygun olduğunuzda birkaç dakika görüşebilir miyiz?`);
+  return `<article class="panel card">
+    <div class="card-head">
+      <div><h2>${esc(l.name)}</h2><div class="cat">${esc(l.category)} · ${esc(l.address)}</div></div>
+      <div class="score"><b>${l.score}</b><span>POTANSİYEL</span></div>
+    </div>
+    <div style="margin-top:12px">
+      <span class="tag high">${esc(l.priority)}</span>
+      <span class="tag">${esc(l.status)}</span>
+      <span class="tag">${esc(l.package)}</span>
+    </div>
+    <div class="meta">
+      <div><small>Telefon</small><a href="${tel ? `tel:${tel}` : '#'}">${esc(l.phone)}</a></div>
+      <div><small>Önerilen çözüm</small>${esc(l.solution)}</div>
+    </div>
+    <div class="copy"><strong>Neden potansiyel?</strong><br>${esc(l.reason)}</div>
+    <div class="actions">
+      ${wa ? `<a class="primary" target="_blank" rel="noopener" href="https://wa.me/${wa}?text=${message}">WhatsApp</a>` : ""}
+      ${tel ? `<a href="tel:${tel}">Ara</a>` : ""}
+      ${l.instagram ? `<a target="_blank" rel="noopener" href="${esc(l.instagram)}">Instagram</a>` : ""}
+      <a target="_blank" rel="noopener" href="${esc(l.source)}">Kaynak</a>
+    </div>
+    <div class="crm">
+      <select class="control crm-status" data-name="${esc(l.name)}">
+        ${["Yeni","İletişime Geçildi","Takip","İlgileniyor","Kazanıldı","Uygun Değil"].map(x=>`<option ${x===crm?"selected":""}>${x}</option>`).join("")}
+      </select>
+      <textarea class="control note" data-name="${esc(l.name)}" placeholder="Görüşme notu…">${esc(note)}</textarea>
+    </div>
+  </article>`;
+}
+function render(){
+  const q=search.value.toLocaleLowerCase("tr");
+  const items=leads.filter(l=>{
+    const st=(saved[l.name]?.status||"Yeni");
+    const hay=[l.name,l.category,l.address,l.phone,l.reason,l.solution].join(" ").toLocaleLowerCase("tr");
+    return (!q||hay.includes(q)) && (!category.value||l.category===category.value) && (!priority.value||l.priority===priority.value) && (!crmFilter.value||st===crmFilter.value);
+  });
+  grid.innerHTML=items.map(card).join("");
+  document.getElementById("resultCount").textContent=`${items.length} işletme`;
+  empty.style.display=items.length?"none":"block";
+  document.querySelectorAll(".crm-status").forEach(el=>el.addEventListener("change",e=>saveState(e.target.dataset.name,"status",e.target.value)));
+  document.querySelectorAll(".note").forEach(el=>el.addEventListener("input",e=>saveState(e.target.dataset.name,"note",e.target.value)));
+}
+[search,category,priority,crmFilter].forEach(x=>x.addEventListener("input",render));
+document.getElementById("exportBtn").addEventListener("click",()=>{
+  const rows=[["İşletme","Kategori","Telefon","Adres","Puan","Öncelik","CRM Durumu","Not","Önerilen Çözüm","Kaynak"]];
+  leads.forEach(l=>rows.push([l.name,l.category,l.phone,l.address,l.score,l.priority,saved[l.name]?.status||"Yeni",saved[l.name]?.note||"",l.solution,l.source]));
+  const csv=rows.map(r=>r.map(v=>`"${String(v).replaceAll('"','""')}"`).join(",")).join("\n");
+  const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="nigde-lead-takip.csv"; a.click(); URL.revokeObjectURL(a.href);
+});
+render(); updateStats();
+</script>
+</body>
+</html>
