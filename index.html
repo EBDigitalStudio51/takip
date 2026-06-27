@@ -1,724 +1,194 @@
 <!doctype html>
-<html lang="tr" data-theme="ocean" data-motion="full">
+<html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <link rel="canonical" href="https://ebdigitalstudio.com.tr/">
-  <meta property="og:url" content="https://ebdigitalstudio.com.tr/">
-  <meta name="theme-color" content="#050814">
-  <title>EB Digital Studio | SEO Odaklı Web Tasarım, Yazılım ve Admin Panel</title>
-  <meta name="description" content="EB Digital Studio; Efecan Berber tarafından kurulan, SEO odaklı web tasarım, kullanıcı deneyimi optimizasyonu, performanslı yazılım, admin panel ve işletmelere özel dijital sistemler geliştiren stüdyodur.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="tr_TR">
-  <meta property="og:site_name" content="EB Digital Studio">
-  <meta property="og:title" content="EB Digital Studio | SEO Odaklı Web Tasarım ve Yazılım">
-  <meta property="og:description" content="Efecan Berber tarafından geliştirilen SEO odaklı web siteleri, kullanıcı deneyimi tasarımı, admin panelleri, üyelik sistemleri ve işletmelere özel dijital çözümler.">
-  <meta property="og:image" content="https://ebdigitalstudio.com.tr/assets/og-image.jpg">
-  <meta property="og:image:alt" content="EB Digital Studio — Efecan Berber web tasarım ve yazılım stüdyosu">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EB Digital Studio | SEO Odaklı Web Tasarım ve Yazılım">
-  <meta name="twitter:description" content="SEO odaklı web tasarımı, performans optimizasyonu, admin panelleri, üyelik sistemleri ve özel dijital çözümler.">
-  <meta name="twitter:image" content="https://ebdigitalstudio.com.tr/assets/og-image.jpg">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "@id":"https://ebdigitalstudio.com.tr/#organization",
-        "name":"EB Digital Studio",
-        "url":"https://ebdigitalstudio.com.tr/",
-        "logo":"https://ebdigitalstudio.com.tr/assets/logo-ocean.svg",
-        "founder":{"@id":"https://ebdigitalstudio.com.tr/#efecan-berber"},
-        "email":"mailto:efecanberber0@gmail.com",
-        "telephone":"+905425866513",
-        "sameAs":["https://www.instagram.com/ebdigitalstudioffical/"],
-        "knowsAbout":["web tasarım","web yazılım","kullanıcı deneyimi optimizasyonu","arama motoru optimizasyonu","mobil öncelikli tasarım","admin panel geliştirme","Supabase entegrasyonu","performans optimizasyonu","güvenli kimlik doğrulama"]
-      },
-      {
-        "@type":"Person",
-        "@id":"https://ebdigitalstudio.com.tr/#efecan-berber",
-        "name":"Efecan Berber",
-        "url":"https://ebdigitalstudio.com.tr/#about",
-        "jobTitle":"Web Designer & Developer",
-        "knowsAbout":["kurumsal web sitesi","UX/UI tasarım","frontend geliştirme","backend entegrasyonu","teknik SEO","veritabanı mimarisi","erişilebilirlik","güvenlik standartları"],
-        "worksFor":{"@id":"https://ebdigitalstudio.com.tr/#organization"}
-      },
-      {
-        "@type":"WebSite",
-        "@id":"https://ebdigitalstudio.com.tr/#website",
-        "url":"https://ebdigitalstudio.com.tr/",
-        "name":"EB Digital Studio",
-        "publisher":{"@id":"https://ebdigitalstudio.com.tr/#organization"},
-        "inLanguage":"tr-TR"
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ProfessionalService",
-    "@id":"https://ebdigitalstudio.com.tr/#service",
-    "name":"EB Digital Studio Web Tasarım ve Yazılım Hizmetleri",
-    "url":"https://ebdigitalstudio.com.tr/#services",
-    "provider":{"@id":"https://ebdigitalstudio.com.tr/#organization"},
-    "areaServed":"Türkiye",
-    "serviceType":["Kurumsal web tasarım","SEO odaklı web geliştirme","Admin panel geliştirme","Üyelik sistemi","Supabase entegrasyonu","Kullanıcı deneyimi optimizasyonu"],
-    "description":"EB Digital Studio; mobil öncelikli, hızlı, güvenli, SEO temeli kurulmuş ve işletmelerin dönüşüm hedeflerine göre planlanan web siteleri ile dijital sistemler geliştirir."
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Bir web projesine nasıl başlanır?","acceptedAnswer":{"@type":"Answer","text":"İlk görüşmede projenin hedefi, sayfa yapısı, tasarım beklentisi ve teknik ihtiyaçları netleştirilir. Yazılı teklif ve kapsam onaylandıktan sonra başlangıç ödemesiyle çalışma başlar."}},
-      {"@type":"Question","name":"Ödeme planı nasıl uygulanır?","acceptedAnswer":{"@type":"Answer","text":"Standart projelerde ödeme planı yüzde 40 başlangıç, yüzde 30 tasarım onayı ve yüzde 30 yayın öncesi şeklindedir. Projeye özel farklı bir plan varsa yazılı teklifte belirtilir."}},
-      {"@type":"Question","name":"Kaç revize dahildir?","acceptedAnswer":{"@type":"Answer","text":"Revize sayısı ve kapsamı proje teklifinde açıkça belirtilir. Kapsam dışı yeni sayfa, özellik veya yön değişiklikleri ayrıca fiyatlandırılır."}},
-      {"@type":"Question","name":"Alan adı, hosting ve üçüncü taraf servis ücretleri fiyata dahil mi?","acceptedAnswer":{"@type":"Answer","text":"Aksi yazılı olarak belirtilmedikçe alan adı, ücretli hosting, lisans, e-posta, ödeme kuruluşu ve üçüncü taraf servis bedelleri müşteriye aittir. GitHub Pages gibi ücretsiz altyapılar uygun projelerde kullanılabilir."}},
-      {"@type":"Question","name":"Ortalama teslim süresi nedir?","acceptedAnswer":{"@type":"Answer","text":"Kurumsal web projeleri çoğunlukla 2–4 hafta içinde tamamlanır. Üyelik, veritabanı, admin paneli ve takip sistemi içeren projelerde süre teknik kapsama göre uzar."}},
-      {"@type":"Question","name":"Site teslim edildikten sonra destek veriliyor mu?","acceptedAnswer":{"@type":"Answer","text":"Teklifte belirtilen yayın sonrası destek süresi boyunca teknik kontroller sağlanır. Devam eden bakım ve içerik güncellemeleri aylık bakım paketiyle sürdürülebilir."}},
-      {"@type":"Question","name":"Sonradan yeni özellik eklenebilir mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Mevcut altyapı uygun olduğu sürece yeni sayfalar, formlar, üyelik, veritabanı, admin paneli ve diğer özellikler ayrı kapsam olarak eklenebilir."}},
-      {"@type":"Question","name":"Site dosyaları ve erişimler kime ait olur?","acceptedAnswer":{"@type":"Answer","text":"Tam ödeme tamamlandıktan sonra sözleşmede belirtilen proje dosyaları ve müşteri adına açılan alan adı veya servis erişimleri müşteriye teslim edilir. Üçüncü taraf lisans koşulları ayrıca geçerlidir."}}
-    ]
-  }
-  </script>
-  <link rel="icon" href="assets/logo-ocean.svg" type="image/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <script>try{document.documentElement.dataset.motion=localStorage.getItem('eb-motion')||'full'}catch(e){document.documentElement.dataset.motion='full'};document.documentElement.classList.add('js')</script>
-  <link rel="stylesheet" href="css/style.css?v=6.3">
-  <link rel="stylesheet" href="css/experience.css?v=6.3">
-  <link rel="stylesheet" href="css/ai-assistant.css?v=6.3">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Niğde Web Sitesi Potansiyel İşletmeler | EB Digital Studio</title>
+<meta name="description" content="Niğde'de bağımsız web sitesi bulunmayan veya yalnız sosyal medya/pazar yeri kullanan yüksek potansiyelli işletmeler için lead takip paneli.">
+<style>
+:root {
+  --bg:#060913; --panel:#0d1324; --panel2:#111a2f; --text:#f6f8ff; --muted:#9aa6c2;
+  --line:rgba(255,255,255,.09); --accent:#67e8f9; --accent2:#8b5cf6; --good:#34d399;
+  --warn:#fbbf24; --danger:#fb7185; --shadow:0 24px 80px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+radial-gradient(circle at 12% 10%,rgba(103,232,249,.12),transparent 28rem),
+radial-gradient(circle at 88% 16%,rgba(139,92,246,.14),transparent 32rem),var(--bg);
+color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+a{color:inherit}.shell{max-width:1480px;margin:auto;padding:28px}
+.hero{display:grid;grid-template-columns:1.6fr .9fr;gap:22px;align-items:stretch;margin-bottom:22px}
+.panel{background:linear-gradient(180deg,rgba(17,26,47,.88),rgba(8,13,26,.9));border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);backdrop-filter:blur(16px)}
+.hero-main{padding:34px;position:relative;overflow:hidden}
+.hero-main:after{content:"";position:absolute;inset:auto -10% -55% 35%;height:340px;background:radial-gradient(circle,rgba(103,232,249,.22),transparent 68%);pointer-events:none}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid rgba(103,232,249,.26);border-radius:999px;background:rgba(103,232,249,.07);color:#c7f9ff;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(32px,5vw,66px);line-height:1.02;margin:20px 0 14px;max-width:880px}
+.grad{background:linear-gradient(90deg,var(--accent),#fff,var(--accent2));-webkit-background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:860px;font-size:17px}
+.stats{padding:24px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.stat{padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
+.stat b{font-size:30px;display:block}.stat span{color:var(--muted);font-size:13px}
+.notice{padding:18px 22px;margin:18px 0;color:#d6def5}
+.toolbar{padding:16px;display:grid;grid-template-columns:1.4fr repeat(3,minmax(150px,.55fr)) auto;gap:10px;position:sticky;top:10px;z-index:20}
+input,select,button,textarea{font:inherit}.control{width:100%;border:1px solid var(--line);background:#0a1020;color:var(--text);padding:12px 14px;border-radius:14px;outline:none}
+.control:focus{border-color:rgba(103,232,249,.55);box-shadow:0 0 0 4px rgba(103,232,249,.08)}
+button{cursor:pointer}.btn{border:1px solid var(--line);background:linear-gradient(135deg,rgba(103,232,249,.16),rgba(139,92,246,.14));color:#fff;border-radius:14px;padding:11px 14px;font-weight:800}
+.btn:hover{border-color:rgba(103,232,249,.45);transform:translateY(-1px)}
+.summary{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:18px 4px}
+.summary strong{font-size:20px}.summary small{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{padding:22px;position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0 auto auto 0;width:4px;height:100%;background:linear-gradient(var(--accent),var(--accent2))}
+.card-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.card h2{margin:0 0 5px;font-size:20px}.cat{color:var(--muted);font-size:13px}
+.score{min-width:70px;text-align:center;border-radius:16px;padding:9px 8px;border:1px solid rgba(103,232,249,.23);background:rgba(103,232,249,.07)}
+.score b{font-size:22px;display:block;color:#bdf8ff}.score span{font-size:10px;color:var(--muted)}
+.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:16px 0}
+.meta div{padding:11px 12px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.025)}
+.meta small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}
+.meta a{text-decoration:none;color:#e9faff}
+.tag{display:inline-flex;padding:5px 9px;border-radius:999px;border:1px solid var(--line);font-size:11px;margin:0 6px 6px 0}
+.tag.high{border-color:rgba(52,211,153,.32);color:#a7f3d0;background:rgba(52,211,153,.07)}
+.copy{margin:12px 0;padding:13px;border-left:2px solid rgba(103,232,249,.35);background:rgba(255,255,255,.02);border-radius:0 12px 12px 0;color:#c7d2ea}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.actions a,.actions button{text-decoration:none;border:1px solid var(--line);background:#0a1020;color:#fff;padding:9px 11px;border-radius:11px;font-weight:700;font-size:13px}
+.actions a.primary{background:linear-gradient(135deg,#0891b2,#6d28d9);border-color:transparent}
+.crm{display:grid;grid-template-columns:150px 1fr;gap:8px;margin-top:15px}.note{min-height:42px;resize:vertical}
+.footer{margin:28px 0 10px;text-align:center;color:var(--muted)}.empty{padding:60px;text-align:center;color:var(--muted);display:none}
+@media(max-width:1050px){.hero{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}}
+@media(max-width:620px){.shell{padding:14px}.hero-main{padding:24px}.toolbar{grid-template-columns:1fr;position:static}.stats{grid-template-columns:1fr 1fr;padding:14px}.meta{grid-template-columns:1fr}.crm{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <div id="top" class="top-anchor" aria-hidden="true"></div>
-  <a class="skip-link" href="#content">İçeriğe geç</a>
-  <div class="noise" aria-hidden="true"></div>
-  <canvas id="particleCanvas" aria-hidden="true"></canvas>
-  <div class="ambient ambient-a" aria-hidden="true"></div>
-  <div class="ambient ambient-b" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
-
-  <div class="intro" id="intro" aria-hidden="true">
-    <div class="intro-grid"></div>
-    <div class="intro-core">
-      <img src="assets/logo-ocean.svg" data-theme-logo alt="" class="intro-logo">
-      <p>EB DIGITAL STUDIO</p>
-      <div class="intro-line"><span></span></div>
-      <small>CRAFTING DIGITAL SIGNATURES</small>
+<div class="shell">
+  <section class="hero">
+    <div class="panel hero-main">
+      <span class="badge">EB Digital Studio · Lead Intelligence</span>
+      <h1>Niğde'de web sitesi potansiyeli yüksek <span class="grad">işletmeler</span></h1>
+      <p>Bağımsız resmî sitesi bulunmayan veya yalnızca Instagram / pazar yeri profili kullanan işletmeler için hazırlanmış satış ve takip paneli. Veriler kamuya açık kaynaklardan derlenmiştir.</p>
     </div>
-  </div>
-
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"><span></span></div>
-
-  <header class="site-header">
-    <div class="container nav-shell">
-      <a class="brand magnetic" href="#top" aria-label="EB Digital Studio ana sayfa">
-        <img class="brand-mark" src="assets/logo-ocean.svg" data-theme-logo alt="">
-        <span><strong>EB DIGITAL STUDIO</strong><small>BY EFECAN BERBER</small></span>
-      </a>
-      <nav class="desktop-nav" aria-label="Ana menü">
-        <a href="#work">Projeler</a><a href="#lab">Design Lab</a><a href="#services">Hizmetler</a><a href="#reviews">Yorumlar</a><a href="#faq">SSS</a><a href="#about">Hikâyem</a><a href="#process">Süreç</a><a href="#contact">İletişim</a>
-      </nav>
-      <div class="nav-actions">
-        <button class="theme-trigger magnetic" type="button" data-theme-open aria-expanded="false"><span class="theme-orb"></span><span>TEMA</span></button>
-        <a class="button button-primary nav-cta magnetic" href="#contact">PROJE BAŞLAT <span>↗</span></a>
-        <button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false"><span></span><span></span></button>
-      </div>
+    <div class="panel stats">
+      <div class="stat"><b id="totalStat">41</b><span>Toplam lead</span></div>
+      <div class="stat"><b id="veryHighStat">22</b><span>Çok yüksek öncelik</span></div>
+      <div class="stat"><b id="categoryStat">16</b><span>Sektör</span></div>
+      <div class="stat"><b id="contactedStat">0</b><span>İletişime geçilen</span></div>
     </div>
-  </header>
+  </section>
 
-  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <a href="#work">Projeler</a><a href="#lab">Design Lab</a><a href="#services">Hizmetler</a><a href="#reviews">Yorumlar</a><a href="#faq">SSS</a><a href="#about">Hikâyem</a><a href="#process">Süreç</a><a href="#contact">İletişim</a>
-    <button type="button" data-theme-open><span class="theme-orb"></span> Temayı değiştir</button>
-  </nav>
+  <div class="panel notice">
+    <strong>Önemli:</strong> “Site bulunamadı” ifadesi, 17 Haziran 2026 tarihli açık web taramasında bağımsız resmî web sitesi görünmediği anlamına gelir; kesin yokluk garantisi değildir. İletişimden hemen önce işletme adını tekrar arat.
+  </div>
 
-  <aside class="theme-panel" aria-hidden="true" aria-label="Renk teması seçimi">
-    <div class="theme-panel-head"><div><span class="eyebrow">SIGNATURE THEMES</span><h2>Atmosferini seç.</h2></div><button class="icon-button" type="button" data-theme-close aria-label="Tema panelini kapat">×</button></div>
-    <p>Renk seçimi; ışıkları, logoyu, butonları, imleci ve arka plan atmosferini birlikte değiştirir.</p>
-    <div class="theme-grid">
-      <button class="theme-option" type="button" data-theme-value="ocean"><span class="swatches ocean"><i></i><i></i><i></i></span><span><strong>Ocean Blue</strong><small>Güven · Teknoloji</small></span><b>01</b></button>
-      <button class="theme-option" type="button" data-theme-value="nebula"><span class="swatches nebula"><i></i><i></i><i></i></span><span><strong>Purple Nebula</strong><small>Yaratıcılık · Cesaret</small></span><b>02</b></button>
-      <button class="theme-option" type="button" data-theme-value="emerald"><span class="swatches emerald"><i></i><i></i><i></i></span><span><strong>Emerald Tech</strong><small>Denge · Modernlik</small></span><b>03</b></button>
-      <button class="theme-option" type="button" data-theme-value="sunset"><span class="swatches sunset"><i></i><i></i><i></i></span><span><strong>Sunset Fire</strong><small>Enerji · Etki</small></span><b>04</b></button>
-      <button class="theme-option" type="button" data-theme-value="gold"><span class="swatches gold"><i></i><i></i><i></i></span><span><strong>Gold Elegance</strong><small>Prestij · Lüks</small></span><b>05</b></button>
-      <button class="theme-option" type="button" data-theme-value="silver"><span class="swatches silver"><i></i><i></i><i></i></span><span><strong>Silver Minimal</strong><small>Sadelik · Netlik</small></span><b>06</b></button>
+  <section class="panel toolbar">
+    <input class="control" id="search" placeholder="İşletme, sektör, adres veya telefon ara…">
+    <select class="control" id="category"><option value="">Tüm sektörler</option></select>
+    <select class="control" id="priority"><option value="">Tüm öncelikler</option><option>Çok Yüksek</option><option>Yüksek</option></select>
+    <select class="control" id="crmFilter"><option value="">Tüm durumlar</option><option>Yeni</option><option>İletişime Geçildi</option><option>Takip</option><option>İlgileniyor</option><option>Kazanıldı</option><option>Uygun Değil</option></select>
+    <button class="btn" id="exportBtn">CSV indir</button>
+  </section>
+
+  <div class="summary">
+    <div><strong id="resultCount">41 işletme</strong><br><small>Puana göre sıralandı</small></div>
+    <small>Durumlar ve notlar bu tarayıcıda otomatik kaydedilir.</small>
+  </div>
+
+  <main class="grid" id="grid"></main>
+  <div class="panel empty" id="empty">Bu filtrelere uygun işletme bulunamadı.</div>
+  <footer class="footer">EB Digital Studio · Niğde İşletme Adayları · Güncelleme: 17.06.2026</footer>
+</div>
+
+<script>
+const leads = [{"name": "Niğdent Ağız ve Diş Sağlığı Polikliniği", "category": "Diş Kliniği", "phone": "0544 123 51 51", "instagram": "https://www.instagram.com/nigdentadsp/", "address": "Aşağı Kayabaşı Mah. Atatürk Bulv. 46/3, Niğde", "score": 98, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Sağlık hizmetinde güven, uzmanlık, tedavi açıklaması ve randevu kritik.", "solution": "Hekim profilleri, tedaviler, online randevu, KVKK", "package": "Signature Web Experience", "source": "https://www.instagram.com/nigdentadsp/"}, {"name": "Net Emlak 511", "category": "Emlak", "phone": "0546 447 20 31 / 0533 795 46 51", "instagram": "https://www.instagram.com/net_emlak511/", "address": "Niğde Merkez", "score": 97, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "İlanların yalnız sosyal medya ve portallara bağlı kalması marka bağımsızlığını azaltıyor.", "solution": "Filtrelenebilir ilan sitesi, WhatsApp talep formu, mülk ekleme paneli", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/net_emlak511/"}, {"name": "Luxe Life Güzellik Merkezi", "category": "Güzellik", "phone": "0501 036 04 51", "instagram": "https://www.instagram.com/luxelife_nigde/", "address": "Ayhan Şahenk Bulvarı 15, Niğde Merkez", "score": 96, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Randevu ve kampanya odaklı hizmet; aktif sosyal medya ve geniş hizmet listesi var.", "solution": "Online randevu, hizmet paketleri, kampanya sayfaları, WhatsApp dönüşümü", "package": "Marka Deneyimi / Signature", "source": "https://www.instagram.com/luxelife_nigde/"}, {"name": "Yurt Emlak Niğde", "category": "Emlak", "phone": "0533 426 53 44 / 0388 232 79 34", "instagram": "https://www.instagram.com/yurtemlaknigde/", "address": "Esenbey Mah. Paşakapı Cad. 23/C, Niğde Merkez", "score": 96, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı; pazar yeri profili var", "reason": "1982'den beri faaliyet gösteren köklü marka; bağımsız web sitesi güveni artırır.", "solution": "Köklü marka hikâyesi, ilan yönetimi, danışmanlık başvurusu", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/yurtemlaknigde/"}, {"name": "Niğde Emlak Merkezi", "category": "Emlak", "phone": "0388 232 99 55 / 0543 669 12 99", "instagram": "", "address": "Niğde Merkez", "score": 95, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı; emlak portallarında aktif", "reason": "Geniş ilan portföyü mevcut; portal bağımlılığını azaltacak kendi altyapısı değerli.", "solution": "İlan yönetimi, gelişmiş filtreleme, arama bildirimleri", "package": "Özel Dijital Sistem", "source": "https://www.hepsiemlak.com/emlak-ofisi/nigde-emlak-merkezi-692268"}, {"name": "Otel Rumeli Niğde", "category": "Otel", "phone": "0388 213 11 42 / 0537 241 00 99", "instagram": "https://www.instagram.com/otel_rumeli/", "address": "Niğde Merkez", "score": 95, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Konaklama işletmesinde Google görünürlüğü ve rezervasyon talebi doğrudan gelir sağlar.", "solution": "Oda tanıtımı, fiyat/rezervasyon talebi, konum ve turizm rehberi", "package": "Signature Web Experience", "source": "https://www.instagram.com/otel_rumeli/"}, {"name": "Yuyi Beaute", "category": "Güzellik", "phone": "0545 617 51 00", "instagram": "https://www.instagram.com/yuyibeaute/", "address": "Niğde Merkez", "score": 95, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yüksek takipçi görünürlüğü ve randevu bazlı çoklu hizmet yapısı.", "solution": "Premium marka sitesi, online randevu, işlem öncesi/sonrası galeri", "package": "Signature Web Experience", "source": "https://www.instagram.com/yuyibeaute/"}, {"name": "Acar Emlak Niğde", "category": "Emlak", "phone": "0538 520 52 19", "instagram": "https://www.instagram.com/acaremlaknigde/", "address": "Niğde Merkez", "score": 94, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Aktif portföyü olan emlak ofislerinde kendi ilan sitesi doğrudan satış getirir.", "solution": "İlan kataloğu, arama filtreleri, ekspertiz talebi, WhatsApp", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/acaremlaknigde/"}, {"name": "Diş Hekimi Selin Koçer", "category": "Diş Kliniği", "phone": "0501 334 51 35", "instagram": "https://www.instagram.com/nigdestetikdishekimi/", "address": "Niğde Merkez", "score": 94, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Gülüş tasarımı ve estetik diş hizmetleri yüksek değerli ve görsel odaklı.", "solution": "Kişisel hekim markası, tedaviler, randevu, vaka galerisi", "package": "Signature Web Experience", "source": "https://www.instagram.com/nigdestetikdishekimi/"}, {"name": "Elit Düğün Salonu / Elit Bahçe", "category": "Düğün & Organizasyon", "phone": "0555 030 07 51", "instagram": "https://www.instagram.com/elitsalon51/", "address": "Niğde", "score": 94, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Görsel galeri, paketler ve tarih uygunluğu talebi doğrudan satış getirir.", "solution": "Salon galerisi, paketler, tarih talebi, WhatsApp rezervasyon", "package": "Signature Web Experience", "source": "https://www.instagram.com/elitsalon51/"}, {"name": "Aves İç Mimarlık", "category": "Mimarlık & İç Mimarlık", "phone": "0506 889 00 51", "instagram": "https://www.instagram.com/aves_icmimarlik/", "address": "Niğde", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "3D görselleştirme ve anahtar teslim projeler portföy sitesiyle çok güçlü sunulur.", "solution": "Proje portföyü, önce/sonra, hizmetler, keşif formu", "package": "Signature Web Experience", "source": "https://www.instagram.com/aves_icmimarlik/"}, {"name": "Denta Home Diş Kliniği", "category": "Diş Kliniği", "phone": "0506 256 09 29", "instagram": "https://www.instagram.com/dentahomenigde/", "address": "Aşağı Kayabaşı, Niğde", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Klinik güveni ve online randevu için kurumsal web sitesi güçlü ihtiyaç.", "solution": "Tedaviler, hekimler, randevu, hasta bilgilendirme", "package": "Signature Web Experience", "source": "https://www.instagram.com/dentahomenigde/"}, {"name": "Fit House VIP Fitness Center", "category": "Fitness & Pilates", "phone": "0541 809 23 92", "instagram": "https://www.instagram.com/fithousevip/", "address": "Niğde Merkez", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Fitness, reformer, zumba ve kadınlara özel bölüm; üyelik dönüşümü yüksek olabilir.", "solution": "Üyelik paketleri, ders programı, eğitmenler, deneme dersi formu", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/fithousevip/"}, {"name": "Seval Emlak Niğde", "category": "Emlak", "phone": "0541 507 45 74 / 0546 507 45 74", "instagram": "https://www.instagram.com/sevalemlaknigde/", "address": "Niğde Merkez", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "2006'dan beri hizmet veren köklü marka; kurumsal güven sitesi potansiyeli yüksek.", "solution": "Kurumsal emlak sitesi, portföy, değerleme başvurusu, danışman profilleri", "package": "Özel Dijital Sistem", "source": "https://www.instagram.com/sevalemlaknigde/"}, {"name": "Twins Beauty Center", "category": "Güzellik", "phone": "0554 533 41 51", "instagram": "https://www.instagram.com/twinss_beauty_center/", "address": "Niğde Merkez", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Görsel olarak güçlü sektör; kampanya ve randevu sayfası yüksek dönüşüm sağlayabilir.", "solution": "Hizmet kataloğu, randevu formu, kampanya landing page", "package": "Marka Deneyimi", "source": "https://www.instagram.com/twinss_beauty_center/"}, {"name": "Şehrazat Deluxe", "category": "Düğün & Organizasyon", "phone": "0542 499 76 99", "instagram": "https://www.instagram.com/sehrazatdeluxe/", "address": "Niğde", "score": 93, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Lüks düğün konumlandırması güçlü bir premium web sunumu gerektirir.", "solution": "Sinematik mekan tanıtımı, paketler, galeri, rezervasyon", "package": "Signature Web Experience", "source": "https://www.instagram.com/sehrazatdeluxe/"}, {"name": "CRP Spor Merkezi", "category": "Fitness & Cimnastik", "phone": "0543 213 51 00", "instagram": "https://www.instagram.com/crpspormerkezi/", "address": "Niğde Merkez", "score": 92, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Çocuk cimnastiği ve annelere pilates; ayrı hedef kitleler için güçlü web potansiyeli.", "solution": "Ders kayıt formu, yaş grupları, program takvimi, galeri", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/crpspormerkezi/"}, {"name": "Niğde Veteriner Kliniği", "category": "Veteriner", "phone": "0545 265 38 51", "instagram": "https://www.instagram.com/nigdeveterinerklinigi/", "address": "Eski Fertek Yolu, Niğde", "score": 92, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "7/24 hizmet, acil bilgiler ve randevu yapısı için web sitesi uygun.", "solution": "Acil iletişim, hizmetler, randevu, hekim tanıtımı", "package": "Marka Deneyimi", "source": "https://www.instagram.com/nigdeveterinerklinigi/"}, {"name": "Çalışkan Akademi Eğitim Kurumları", "category": "Eğitim", "phone": "0535 765 21 51", "instagram": "https://www.instagram.com/caliskan_egitim/", "address": "Aşağı Kayabaşı Mah., Niğde Merkez", "score": 92, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kayıt, program, öğretmen ve başarı içerikleri için web sitesi çok değerlidir.", "solution": "Online ön kayıt, programlar, öğretmenler, duyurular", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/caliskan_egitim/"}, {"name": "3X Gym Pilates & Fitness", "category": "Fitness & Pilates", "phone": "0531 811 16 55", "instagram": "https://www.instagram.com/3xgym/", "address": "Dr. Sami Yağız Cad., Aşağı Kayabaşı, Niğde", "score": 91, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Geniş çalışma saatleri ve çoklu hizmet; online üyelik talebi uygun.", "solution": "Üyelik paketleri, programlar, eğitmen profilleri, WhatsApp", "package": "Marka Deneyimi", "source": "https://www.instagram.com/3xgym/"}, {"name": "Niğde Çözüm Kurs", "category": "Eğitim", "phone": "0545 532 40 41 / 0388 502 01 03", "instagram": "https://www.instagram.com/nigdecozumkurs/", "address": "Niğde Merkez", "score": 91, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yoğun içerik ve kayıt dönemi; arama görünürlüğü yeni öğrenci getirir.", "solution": "Kurs programları, deneme sınavı başvurusu, online ön kayıt", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/nigdecozumkurs/"}, {"name": "Santolina Restaurant", "category": "Kafe & Restoran", "phone": "0542 502 24 44", "instagram": "https://www.instagram.com/santolinarestaurant/", "address": "Niğde Merkez", "score": 91, "priority": "Çok Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Premium gastronomi konumlandırması; kaliteli web sitesi marka algısını güçlendirir.", "solution": "Premium menü, rezervasyon, etkinlik ve fotoğraf galerisi", "package": "Signature Web Experience", "source": "https://www.instagram.com/santolinarestaurant/"}, {"name": "Lotus Pilates Studio", "category": "Pilates", "phone": "0545 205 98 01", "instagram": "https://www.instagram.com/pilateslotusstudio/", "address": "Niğde Merkez", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Reformer ve klinik pilates için güven, uzmanlık ve randevu odaklı site gerekir.", "solution": "Randevu, ders paketleri, eğitmen tanıtımı, sık sorulan sorular", "package": "Marka Deneyimi", "source": "https://www.instagram.com/pilateslotusstudio/"}, {"name": "Prenses Güzellik Salonu", "category": "Güzellik", "phone": "0546 788 66 52", "instagram": "https://www.instagram.com/prenses_guzellik_salonuuu/", "address": "Niğde Merkez", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Lazer, cilt bakımı ve kalıcı makyaj gibi yüksek marjlı hizmetler sunuyor.", "solution": "Randevu, fiyat talebi, hizmet açıklamaları, Google görünürlüğü", "package": "Marka Deneyimi", "source": "https://www.instagram.com/prenses_guzellik_salonuuu/"}, {"name": "Saklı Bahçe Kafe", "category": "Kafe & Organizasyon", "phone": "0555 152 36 73", "instagram": "https://www.instagram.com/saklibahcenigde/", "address": "Fertek, Niğde", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kahvaltı, özel gün ve organizasyon hizmetleri tek sitede paketlenebilir.", "solution": "Menü, organizasyon paketleri, rezervasyon ve galeri", "package": "Marka Deneyimi", "source": "https://www.instagram.com/saklibahcenigde/"}, {"name": "Yürekli Mimarlık", "category": "Mimarlık & İç Mimarlık", "phone": "0552 095 34 02", "instagram": "", "address": "Yukarı Kayabaşı Mah., Serin Sok., Kayalı Park yanı, Niğde", "score": 90, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yeni/yerel mimarlık ofisinde proje portföyü güven ve teklif talebi üretir.", "solution": "Kurumsal portföy, proje galerisi, hizmetler, teklif formu", "package": "Signature Web Experience", "source": "https://www.instagram.com/reel/C6RHHqZNBUA/"}, {"name": "Günay Pet Veteriner Kliniği", "category": "Veteriner", "phone": "0531 928 58 20", "instagram": "https://www.instagram.com/veteriner.gunay/", "address": "Niğde", "score": 89, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "7/24 hizmet ve güven odaklı sağlık iletişimi web sitesinde daha güçlü olur.", "solution": "Randevu, acil arama, hizmetler, sık sorulan sorular", "package": "Marka Deneyimi", "source": "https://www.instagram.com/veteriner.gunay/"}, {"name": "Kuantum Eğitim YKS / LGS", "category": "Eğitim", "phone": "0551 459 51 51", "instagram": "https://www.instagram.com/nigdekuantumegitim/", "address": "Derbent Mezarlığı Karşısı, Migros Üstü, Niğde", "score": 89, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Öğrenci ve veli güvenini artıracak program/başarı/kayıt yapısı uygun.", "solution": "Ön kayıt, başarılar, kadro, program ve duyuru sistemi", "package": "Marka Deneyimi", "source": "https://www.instagram.com/nigdekuantumegitim/"}, {"name": "Arda Çayan Sports Center", "category": "Fitness & Spor", "phone": "0506 096 22 86", "instagram": "https://www.instagram.com/ardacayansportscenter/", "address": "Aşağı Kayabaşı Mah., Bor Yolu, Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yerel spor merkezi için üyelik ve tanıtım sayfaları dönüşüm sağlar.", "solution": "Salon tanıtımı, paketler, eğitmenler, deneme dersi", "package": "Marka Deneyimi", "source": "https://www.instagram.com/p/DM-nWPwIWmS/"}, {"name": "Göktürk Esen Bahçe Restaurant & Cafe", "category": "Kafe & Organizasyon", "phone": "0538 482 12 69", "instagram": "https://www.instagram.com/esenbahce_gokturk/", "address": "Niğde–Bor Yolu", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Aile mekânı, oyun alanı ve organizasyon özellikleri ayrı sayfalarda satılabilir.", "solution": "Rezervasyon, mekan tanıtımı, organizasyon paketleri", "package": "Marka Deneyimi", "source": "https://www.instagram.com/reel/DLUhDbLtHt2/"}, {"name": "Koyunlu Mobilya", "category": "Mobilya", "phone": "0535 014 15 23", "instagram": "https://www.instagram.com/ergul.mobilya.nigde/", "address": "Bor Yolu 1. km, PTT Kargo karşısı, Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Ürün kataloğu ve WhatsApp teklif sistemi mağaza trafiğini artırabilir.", "solution": "Ürün katalogları, koleksiyonlar, fiyat talebi, mağaza bilgisi", "package": "Marka Deneyimi / Özel Sistem", "source": "https://www.instagram.com/ergul.mobilya.nigde/"}, {"name": "Masal Dizayn / Masal Davet", "category": "Düğün & Organizasyon", "phone": "0543 344 30 51", "instagram": "https://www.instagram.com/masal_dizaynn/", "address": "Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Organizasyon görselleri ve paketlerinin tek yerde sunulması teklif sayısını artırır.", "solution": "Portföy, konsept paketleri, teklif formu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/masal_dizaynn/"}, {"name": "Yavuzpet Veteriner Kliniği", "category": "Veteriner", "phone": "0551 596 67 85 / 0531 347 50 68", "instagram": "https://www.instagram.com/nigde_yavuzpet_veterinerlik/", "address": "Niğde", "score": 88, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kedi, köpek ve çiftlik hizmetleri farklı hedef kitlelere özel sunulabilir.", "solution": "Hizmet kategorileri, 7/24 iletişim, yerinde hizmet formu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/nigde_yavuzpet_veterinerlik/"}, {"name": "Babil Cafe Bistro", "category": "Kafe & Restoran", "phone": "0530 707 01 29", "instagram": "https://www.instagram.com/babilcafebistro/", "address": "Niğde Merkez", "score": 87, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Yoğun sosyal medya içeriği; dijital menü ve rezervasyon dönüşümü artırabilir.", "solution": "QR menü, rezervasyon, etkinlik duyurusu, Google SEO", "package": "Marka Deneyimi", "source": "https://www.instagram.com/babilcafebistro/"}, {"name": "Borvet Veteriner Kliniği", "category": "Veteriner", "phone": "0536 653 10 51", "instagram": "https://www.instagram.com/borvetveteriner_/", "address": "Bor Yolu, Ramada Otel karşısı, Niğde", "score": 87, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Konum ve randevu bilgisinin Google'da güçlü görünmesi gerekir.", "solution": "Klinik tanıtımı, randevu, acil iletişim, harita", "package": "Marka Deneyimi", "source": "https://www.instagram.com/borvetveteriner_/"}, {"name": "Tekin Mobilya Niğde", "category": "Mobilya", "phone": "0388 213 61 59 / 0541 332 51 00", "instagram": "https://www.instagram.com/tekinmobilyanigde/", "address": "Bor Yolu, Niğde", "score": 87, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "İki lokasyon ve ürün çeşitliliği dijital katalog için uygun.", "solution": "Katalog, mağaza/şube sayfaları, WhatsApp fiyat talebi", "package": "Marka Deneyimi", "source": "https://www.instagram.com/tekinmobilyanigde/"}, {"name": "Vega Özel Öğretim Kursu", "category": "Eğitim", "phone": "0552 104 96 52 / 0505 582 11 01", "instagram": "https://www.instagram.com/vegaozelogretimkursu/", "address": "Sarıköprü Mah. Zemerdin Sok. 20/39, Niğde", "score": 87, "priority": "Yüksek", "status": "Bağımsız yerel site bulunamadı", "reason": "Sınıf sistemi ve kayıt kampanyaları web üzerinden daha profesyonel sunulabilir.", "solution": "Kurs tanıtımı, kayıt formu, duyuru ve kampanya sayfaları", "package": "Marka Deneyimi", "source": "https://www.instagram.com/reel/DVLBvf1iudH/"}, {"name": "CTN Mimarlık", "category": "Mimarlık & İç Mimarlık", "phone": "Instagram DM", "instagram": "https://www.instagram.com/archctn.design/", "address": "Niğde", "score": 86, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Mimari proje, danışmanlık ve dekorasyon hizmetleri görsel portföy gerektirir.", "solution": "Proje galerisi, hizmetler, danışmanlık ve teklif formu", "package": "Signature Web Experience", "source": "https://www.instagram.com/archctn.design/"}, {"name": "Öz Çavuş Mobilya / Wellhome", "category": "Mobilya & Dekorasyon", "phone": "0542 681 10 69 / 0388 232 20 24", "instagram": "https://www.instagram.com/ozcavusmobilya/", "address": "Niğde", "score": 86, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Mobilya, mutfak, PVC ve kapı hizmetleri tek dijital katalogda toplanabilir.", "solution": "Hizmet kategorileri, proje galerisi, keşif ve teklif formu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/ozcavusmobilya/"}, {"name": "Metot Kurs Merkezi", "category": "Eğitim", "phone": "0507 265 84 70", "instagram": "https://www.instagram.com/metotkursmerkezi/", "address": "Niğde Merkez", "score": 85, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Kayıt ve program bilgileri yalnız sosyal medyada kalıyor.", "solution": "Ön kayıt, sınıf programları, öğretmen kadrosu", "package": "Marka Deneyimi", "source": "https://www.instagram.com/reel/CghH8TqDWjz/"}, {"name": "Tam'Bu Mobilya", "category": "Mobilya", "phone": "0538 668 16 51", "instagram": "https://www.instagram.com/tambumobilya.nigde/", "address": "Niğde", "score": 84, "priority": "Yüksek", "status": "Bağımsız resmî site bulunamadı", "reason": "Özel üretim ve sipariş odaklı yapı için proje galerisi ve teklif formu uygundur.", "solution": "Proje galerisi, özel sipariş formu, ürün koleksiyonları", "package": "Marka Deneyimi", "source": "https://www.instagram.com/tambumobilya.nigde/"}];
+const KEY = "eb_nigde_leads_v1";
+const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+const grid = document.getElementById("grid");
+const search = document.getElementById("search");
+const category = document.getElementById("category");
+const priority = document.getElementById("priority");
+const crmFilter = document.getElementById("crmFilter");
+const empty = document.getElementById("empty");
+
+[...new Set(leads.map(x=>x.category))].sort().forEach(c=>{
+  const o=document.createElement("option"); o.value=o.textContent=c; category.appendChild(o);
+});
+
+function phoneDigits(v){
+  const first=(v.match(/0\d{3}\s?\d{3}\s?\d{2}\s?\d{2}/)||[])[0]||"";
+  return first.replace(/\D/g,"").replace(/^0/,"90");
+}
+function telDigits(v){
+  const first=(v.match(/0\d{3}\s?\d{3}\s?\d{2}\s?\d{2}/)||[])[0]||"";
+  return first.replace(/\D/g,"");
+}
+function esc(s){return String(s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function saveState(name, field, value){
+  saved[name]=saved[name]||{};
+  saved[name][field]=value;
+  localStorage.setItem(KEY, JSON.stringify(saved));
+  updateStats();
+}
+function updateStats(){
+  document.getElementById("contactedStat").textContent =
+    Object.values(saved).filter(x=>x.status && x.status!=="Yeni").length;
+}
+function card(l){
+  const state=saved[l.name]||{};
+  const crm=state.status||"Yeni";
+  const note=state.note||"";
+  const wa=phoneDigits(l.phone);
+  const tel=telDigits(l.phone);
+  const message=encodeURIComponent(`Merhaba, ben Efecan Berber. EB Digital Studio olarak Niğde'deki işletmelere özel web sitesi ve dijital sistemler geliştiriyorum. ${l.name} için sektörünüze uygun kısa bir site ön izlemesi hazırlamak isterim. Uygun olduğunuzda birkaç dakika görüşebilir miyiz?`);
+  return `<article class="panel card">
+    <div class="card-head">
+      <div><h2>${esc(l.name)}</h2><div class="cat">${esc(l.category)} · ${esc(l.address)}</div></div>
+      <div class="score"><b>${l.score}</b><span>POTANSİYEL</span></div>
     </div>
-    <section class="motion-settings" aria-labelledby="motionTitle">
-      <div class="motion-heading"><div><span class="eyebrow">MOTION ENGINE</span><h3 id="motionTitle">Animasyon modu</h3></div><span class="motion-status" data-motion-status>TAM</span></div>
-      <p>Bu cihazda animasyon görünmüyorsa <strong>Tam</strong> modunu seç. Tercihin bu cihazda saklanır.</p>
-      <div class="motion-options" role="group" aria-label="Animasyon modu seçimi">
-        <button type="button" data-motion-value="full"><b>Tam</b><small>Sinematik deneyim</small></button>
-        <button type="button" data-motion-value="system"><b>Sistem</b><small>Cihaz ayarını izle</small></button>
-        <button type="button" data-motion-value="reduced"><b>Azaltılmış</b><small>Daha sakin görünüm</small></button>
-      </div>
-    </section>
-    <button class="button button-secondary theme-reset" type="button">Varsayılan temaya dön</button>
-  </aside>
-  <div class="panel-backdrop" data-theme-close></div>
-
-  <main id="content">
-    <section class="hero section-pad">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="status-pill"><i></i> Yeni projeler için müsait</div>
-          <span class="eyebrow">EB EXPERIENCE OS · SEO · UX · PERFORMANS · GÜVENLİ SİSTEMLER</span>
-          <h1>SEO odaklı,<br><span class="gradient-text">güven veren web sistemleri</span><br>tasarlıyorum.</h1>
-          <p>İşletmeniz için yalnızca güzel görünen değil; mobil öncelikli, hızlı yüklenen, arama motorları tarafından anlaşılabilen ve ziyaretçiyi teklif, randevu ya da satın alma aksiyonuna taşıyan web deneyimleri geliştiriyorum.</p>
-          <div class="rotating-line">Her projede <strong data-rotate-word>kusursuz detay</strong> hedefliyorum.</div>
-          <div class="hero-actions"><a class="button button-primary magnetic" href="#work">PROJELERİMİ GÖR <span>↗</span></a><a class="button button-secondary magnetic" href="#contact">BİRLİKTE ÇALIŞALIM</a></div>
-          <div class="hero-proof"><span><b>01</b> Özel tasarım</span><span><b>02</b> Teknik SEO altyapısı</span><span><b>03</b> Mobil öncelikli UX</span></div>
-          <button class="os-hint" type="button" data-command-open aria-label="Komut merkezini aç">
-            <span class="os-pulse"></span><strong>EB COMMAND CENTER</strong><kbd>CTRL</kbd><i>+</i><kbd>K</kbd>
-          </button>
-        </div>
-
-        <div class="hero-stage reveal" data-delay="110">
-          <div class="beam beam-one"></div><div class="beam beam-two"></div><div class="beam beam-three"></div>
-          <div class="signature-mark" data-tilt>
-            <div class="signature-glow"></div>
-            <img src="assets/logo-ocean.svg" data-theme-logo alt="EB Digital Studio monogramı">
-            <span>EB</span>
-          </div>
-          <div class="portrait-shell" data-tilt>
-            <div class="portrait-frame"><img src="assets/portrait-hero.webp" alt="Efecan Berber, EB Digital Studio kurucusu" width="1122" height="1402" fetchpriority="high"></div>
-            <div class="portrait-label"><strong>EFECAN BERBER</strong><small>WEB DESIGNER & DEVELOPER</small></div>
-          </div>
-          <div class="float-chip chip-a"><b>UI</b><span>Premium arayüz</span></div>
-          <div class="float-chip chip-b"><b>DB</b><span>Güvenli sistem</span></div>
-          <div class="edition-badge">SIGNATURE<br><strong>02</strong></div>
-        </div>
-      </div>
-      <div class="container scroll-cue"><span></span> SCROLL TO EXPLORE</div>
-    </section>
-
-    <div class="marquee" aria-hidden="true"><div>WEB DESIGN ✦ WEB DEVELOPMENT ✦ DASHBOARD SYSTEMS ✦ BRAND EXPERIENCE ✦ WEB DESIGN ✦ WEB DEVELOPMENT ✦ DASHBOARD SYSTEMS ✦ BRAND EXPERIENCE ✦</div></div>
-
-    <section class="section-pad project-section" id="work">
-      <div class="container">
-        <div class="section-heading reveal"><div><span class="section-no">01</span><span class="eyebrow">ÖNE ÇIKAN PROJE</span><h2>Bir markayı dijital<br><span class="gradient-text">deneyime dönüştürmek.</span></h2></div><p>Ber Can’t; yalnızca görsel bir site değil, üyelik, öğrenci takibi, koç paneli ve güvenli veri akışıyla dijital ürüne dönüştürülen gerçek bir vaka çalışmasıdır.</p></div>
-        <article class="featured-project tilt-card reveal" data-tilt>
-          <div class="project-copy">
-            <span class="project-kicker">FEATURED CASE / 001</span>
-            <h3>Ber Can’t Premium<br><span class="gradient-text">Online Coaching</span></h3>
-            <p>Başlangıçta marka sunumu ve online koçluk ihtiyacı olan proje; üyelik girişi, öğrenci takip paneli, admin kontrol ekranı ve mobil öncelikli kullanıcı deneyimiyle çalışan bir dijital sisteme dönüştürüldü.</p>
-            <div class="tag-list"><span>Web Design</span><span>Membership</span><span>Dashboard</span><span>Supabase</span><span>Mobile UX</span></div>
-            <ul class="project-points"><li>Şifreli öğrenci deneyimi ve rol bazlı erişim</li><li>Koç, admin ve öğrenci panelleri</li><li>Günlük takip, ölçüm ve veri yönetimi altyapısı</li><li>Mobil öncelikli arayüz ve dönüşüm odaklı sayfa akışı</li></ul><div class="case-proof-grid"><article><small>Problem</small><strong>Dağınık koçluk süreci</strong><p>Program, takip ve iletişim ayrı ayrı ilerliyordu.</p></article><article><small>Çözüm</small><strong>Tek merkezli sistem</strong><p>Üyelik, panel ve takip verileri aynı deneyimde toplandı.</p></article><article><small>Sonuç</small><strong>Yönetilebilir marka</strong><p>Koçluk hizmeti daha profesyonel ve ölçeklenebilir hale geldi.</p></article></div>
-            <div class="project-actions"><a class="button button-primary magnetic" href="https://bercant.com.tr" target="_blank" rel="noopener">CANLI PROJE <span>↗</span></a><a class="button button-secondary magnetic" href="case-study-bercant.html">VAKA ÇALIŞMASI <span>→</span></a></div>
-          </div>
-          <div class="device-scene">
-            <div class="device-glow"></div>
-            <div class="laptop"><div class="laptop-screen"><img src="assets/bercant-project.webp" alt="Ber Can’t proje ön izlemesi" width="1536" height="1024"></div><div class="laptop-base"></div></div>
-            <div class="phone"><div class="phone-notch"></div><img src="assets/bercant-project.webp" alt="Ber Can’t mobil görünüm ön izlemesi"></div>
-            <span class="live-badge"><i></i> LIVE EXPERIENCE</span>
-          </div>
-        </article>
-        <div class="project-strip reveal">
-          <div><span>02 / NEXT</span><strong>Yeni proje yakında</strong><small>Her yeni çalışma gerçek bir vaka çalışması olarak eklenecek.</small></div>
-          <div><span>LAB / 01</span><strong>Özel sistem konseptleri</strong><small>Admin paneli, üyelik ve takip deneyimleri.</small></div>
-          <div class="project-arrow">→</div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section-pad lab-section" id="lab">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="section-no">02</span><span class="eyebrow">LIVE SITE CONFIGURATOR</span>
-            <h2>Markanı yaz,<br><span class="gradient-text">siteni ve fiyatını canlı gör.</span></h2>
-          </div>
-          <p>İşletme bilgilerini, tasarım dilini ve ihtiyaç duyduğun özellikleri seç. Ön izleme markana göre şekillenir; seçili kapsamın tek toplam fiyatı anında hesaplanır.</p>
-        </div>
-
-        <div class="design-lab design-lab-v5 reveal">
-          <div class="lab-controls">
-            <div class="lab-system-head">
-              <span><i></i> EB CONFIGURATION ENGINE</span><b data-lab-status>READY</b>
-            </div>
-
-            <fieldset class="lab-group lab-business-info">
-              <legend>01 · İşletme bilgileri</legend>
-              <div class="lab-input-grid">
-                <label><span>Marka / işletme adı</span><input type="text" maxlength="30" placeholder="Örn. Atlas Fitness" data-lab-input="brand"></label>
-                <label><span>Ana slogan</span><input type="text" maxlength="70" placeholder="Boş bırakırsan sektöre göre oluşturulur" data-lab-input="slogan"></label>
-              </div>
-            </fieldset>
-
-            <fieldset class="lab-group">
-              <legend>02 · Sektör</legend>
-              <div class="lab-pills lab-sector-pills" data-lab-group="sector">
-                <button type="button" class="is-active" data-value="fitness">Fitness</button>
-                <button type="button" data-value="beauty">Güzellik</button>
-                <button type="button" data-value="architecture">Mimarlık</button>
-                <button type="button" data-value="restaurant">Restoran</button>
-                <button type="button" data-value="realestate">Emlak</button>
-                <button type="button" data-value="clinic">Klinik</button>
-                <button type="button" data-value="technology">Teknoloji</button>
-                <button type="button" data-value="education">Eğitim</button>
-                <button type="button" data-value="automotive">Otomotiv</button>
-                <button type="button" data-value="personal">Kişisel Marka</button>
-              </div>
-            </fieldset>
-
-            <fieldset class="lab-group">
-              <legend>03 · Tasarım dili</legend>
-              <div class="lab-pills" data-lab-group="style">
-                <button type="button" class="is-active" data-value="futuristic">Futuristik <small>+7.500</small></button>
-                <button type="button" data-value="luxury">Lüks <small>+6.000</small></button>
-                <button type="button" data-value="minimal">Minimal</button>
-                <button type="button" data-value="corporate">Kurumsal <small>+3.000</small></button>
-              </div>
-            </fieldset>
-
-            <fieldset class="lab-group">
-              <legend>04 · Renk atmosferi</legend>
-              <div class="lab-color-grid" data-lab-group="palette">
-                <button type="button" class="is-active" data-value="electric" aria-label="Elektrik mavi mor"><i></i><i></i></button>
-                <button type="button" data-value="emerald" aria-label="Zümrüt turkuaz"><i></i><i></i></button>
-                <button type="button" data-value="gold" aria-label="Altın siyah"><i></i><i></i></button>
-                <button type="button" data-value="fire" aria-label="Turuncu kırmızı"><i></i><i></i></button>
-                <button type="button" data-value="mono" aria-label="Gümüş monokrom"><i></i><i></i></button>
-              </div>
-            </fieldset>
-
-            <fieldset class="lab-group">
-              <legend>05 · Proje kapsamı</legend>
-              <div class="lab-select-grid">
-                <label><span>Sayfa sayısı</span><select data-lab-select="pages"><option value="starter">1–3 sayfa · 17.900 TL</option><option value="business" selected>4–7 sayfa · 29.900 TL</option><option value="signature">8–12 sayfa · 49.900 TL</option><option value="extended">13+ sayfa · 64.900 TL</option></select></label>
-                <label><span>Teslim planı</span><select data-lab-select="deadline"><option value="standard" selected>Standart teslim</option><option value="urgent">Acil teslim · +%25</option></select></label>
-              </div>
-            </fieldset>
-
-            <fieldset class="lab-group">
-              <legend>06 · Ek özellikler</legend>
-              <div class="lab-checks lab-feature-grid">
-                <label><input type="checkbox" data-lab-feature value="animations"><span>Gelişmiş animasyon <b>+7.500</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="language"><span>İkinci dil <b>+7.500</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="blog"><span>Blog sistemi <b>+8.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="appointment"><span>Randevu / başvuru <b>+6.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="membership"><span>Üyelik ve giriş <b>+15.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="database"><span>Supabase veritabanı <b>+12.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="admin"><span>Admin paneli <b>+20.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="tracking"><span>Müşteri takip paneli <b>+18.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="uploads"><span>Dosya / fotoğraf yükleme <b>+8.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="roles"><span>Rol ve yetkilendirme <b>+8.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="payment"><span>Ödeme entegrasyonu <b>+15.000</b></span></label>
-                <label><input type="checkbox" data-lab-feature value="seo"><span>Gelişmiş teknik SEO <b>+5.000</b></span></label>
-              </div>
-            </fieldset>
-
-            <fieldset class="lab-group">
-              <legend>07 · Aylık bakım (isteğe bağlı)</legend>
-              <label class="lab-single-select"><select data-lab-select="maintenance"><option value="none">Bakım paketi istemiyorum</option><option value="basic">Temel Bakım · 2.000 TL/ay</option><option value="business">Business Care · 3.500 TL/ay</option><option value="system">System Care · 6.000 TL/ay</option></select></label>
-            </fieldset>
-
-            <div class="lab-price-mini" aria-live="polite">
-              <span>SEÇİLİ KAPSAMIN TOPLAMI</span>
-              <strong data-lab-total>37.400 TL</strong>
-              <small><b data-lab-delivery>12–18 iş günü</b> · Mobil uyum, temel SEO, SSL ve yayın kurulumu dahil.</small>
-            </div>
-          </div>
-
-          <div class="lab-preview-wrap">
-            <div class="lab-preview-toolbar">
-              <div><span>CANLI ÖN İZLEME</span><b data-preview-sector>FITNESS & COACHING</b><small data-preview-style-name>FUTURISTIC / IMMERSIVE</small></div>
-              <div class="lab-device-switch" data-lab-device>
-                <button type="button" class="is-active" data-device="desktop" aria-label="Masaüstü görünümü">▰</button>
-                <button type="button" data-device="tablet" aria-label="Tablet görünümü">▯</button>
-                <button type="button" data-device="mobile" aria-label="Telefon görünümü">▯</button>
-              </div>
-            </div>
-
-            <div class="lab-browser" data-lab-preview data-style="futuristic" data-palette="electric" data-device="desktop">
-              <div class="lab-browser-bar">
-                <div><i></i><i></i><i></i></div><span data-preview-domain>pulsefitness.com</span><b>LIVE</b>
-              </div>
-              <div class="lab-site" data-preview-sector-art="fitness">
-                <nav><strong data-preview-brand>PULSE FITNESS</strong><span data-preview-menu>Hakkımızda&nbsp;&nbsp; Programlar&nbsp;&nbsp; Başarılar&nbsp;&nbsp; İletişim</span><button data-preview-cta>Ücretsiz Görüşme</button></nav>
-                <main>
-                  <div class="lab-copy">
-                    <small data-preview-kicker>PERFORMANCE COACHING</small>
-                    <h3><span data-preview-title-main>Potansiyelini</span><br><em data-preview-title-accent>performansa dönüştür.</em></h3>
-                    <p data-preview-desc>Bilimsel yaklaşım, güçlü takip ve kişiye özel dijital deneyim.</p>
-                    <div><button data-preview-primary>Programları Keşfet →</button><a data-preview-secondary>Nasıl çalışır?</a></div>
-                    <div class="lab-service-row" data-preview-services><span>Kişisel Program</span><span>Gelişim Takibi</span><span>Online Koçluk</span></div>
-                  </div>
-                  <div class="lab-art">
-                    <span class="lab-orb"><i data-preview-icon>⚡</i></span>
-                    <div class="lab-glass-card"><small data-preview-metric-label>HAFTALIK GELİŞİM</small><strong data-preview-metric>+24%</strong><i></i></div>
-                    <div class="lab-mini-card"><b>01</b><span data-preview-feature>Mobil deneyim</span></div>
-                    <div class="lab-system-stack" data-preview-stack></div>
-                  </div>
-                </main>
-                <footer><span>Özel Tasarım</span><span>Mobil Uyum</span><span>Hızlı & Güvenli</span></footer>
-              </div>
-              <div class="lab-device-shadow"></div>
-            </div>
-
-            <aside class="lab-quote-card" aria-live="polite">
-              <div class="lab-quote-head"><div><span>CANLI MALİYET DÖKÜMÜ</span><strong data-quote-package>Marka Deneyimi</strong></div><b data-quote-total>37.400 TL</b></div>
-              <div class="lab-breakdown" data-lab-breakdown></div>
-              <div class="lab-recurring" data-lab-recurring hidden><span>Aylık bakım</span><strong>0 TL/ay</strong></div>
-              <div class="lab-quote-note"><b>Tek fiyat:</b> Seçili standart kapsam değişmediği sürece hesaplanan proje toplamıdır. Alan adı, ücretli lisanslar, üçüncü taraf servis kullanımları ve vergiler dahil değildir.</div>
-              <div class="lab-actions">
-                <button class="button button-primary magnetic" type="button" data-lab-whatsapp>BU KONFİGÜRASYONU GÖNDER <span>↗</span></button>
-                <button class="button button-ghost" type="button" data-lab-apply>PROJE FORMUNA AKTAR</button>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section-pad services-section" id="services">
-      <div class="container">
-        <div class="section-heading reveal"><div><span class="section-no">03</span><span class="eyebrow">HİZMETLER</span><h2>Fikirden yayına,<br><span class="gradient-text">ölçülebilir web altyapısı.</span></h2></div><p>Kurumsal web sitesi, kullanıcı deneyimi optimizasyonu, teknik SEO, mobil öncelikli tasarım, güvenli üyelik sistemi ve yönetilebilir admin panel ihtiyaçlarını tek kapsamda planlıyorum.</p></div>
-        <div class="service-grid">
-          <article class="service-card reveal" data-tilt><span class="service-no">01</span><i>◩</i><h3>Kurumsal Web Sitesi</h3><p>Markanızın güvenini ilk ekranda anlatan; hızlı yüklenen, mobil öncelikli, SEO başlık yapısı kurulmuş ve iletişim aksiyonlarına yönlendiren kurumsal web siteleri.</p><b>BRAND EXPERIENCE →</b></article>
-          <article class="service-card reveal" data-delay="60" data-tilt><span class="service-no">02</span><i>◇</i><h3>Kişisel Portföy</h3><p>Uzmanlığınızı, geçmiş çalışmalarınızı, referanslarınızı ve iletişim kanallarınızı tek akışta sunan; kişisel otoriteyi güçlendiren portföy deneyimleri.</p><b>PERSONAL BRAND →</b></article>
-          <article class="service-card reveal" data-delay="120" data-tilt><span class="service-no">03</span><i>⌁</i><h3>Üyelik Sistemleri</h3><p>Güvenli kullanıcı kaydı, oturum yönetimi, rol bazlı erişim, şifre yenileme ve kişiye özel içerik akışlarıyla çalışan üyelik sistemleri.</p><b>AUTHENTICATION →</b></article>
-          <article class="service-card reveal" data-tilt><span class="service-no">04</span><i>▦</i><h3>Takip Panelleri</h3><p>Öğrenci, danışan veya müşteri verilerini; hedef, ölçüm, tarihçe ve rapor mantığıyla düzenleyen kullanıcı deneyimi odaklı takip panelleri.</p><b>DASHBOARD UX →</b></article>
-          <article class="service-card reveal" data-delay="60" data-tilt><span class="service-no">05</span><i>⌘</i><h3>Admin Paneli</h3><p>İçerik, ilan, yorum, kullanıcı, randevu ve kayıt verilerini tek merkezden yönetebilen güvenli ve yetkilendirilmiş kontrol ekranları.</p><b>CONTROL SYSTEM →</b></article>
-          <article class="service-card reveal" data-delay="120" data-tilt><span class="service-no">06</span><i>⬡</i><h3>Supabase Entegrasyonu</h3><p>Kimlik doğrulama, veritabanı, dosya depolama, güvenli veri erişimi ve ölçeklenebilir backend ihtiyacı için Supabase tabanlı altyapılar.</p><b>SECURE BACKEND →</b></article>
-          <article class="service-card reveal" data-tilt><span class="service-no">07</span><i>◎</i><h3>Alan Adı & Yayın</h3><p>DNS kayıtları, HTTPS, GitHub Pages, canonical yapı, sitemap, robots.txt ve Search Console hazırlığı dahil yayın süreci.</p><b>GO LIVE →</b></article>
-          <article class="service-card reveal" data-delay="60" data-tilt><span class="service-no">08</span><i>↻</i><h3>Bakım & Güncelleme</h3><p>Mevcut sitelerin içerik güncellemesi, teknik bakım, performans optimizasyonu, bağlantı kontrolü ve kullanıcı deneyimi iyileştirmeleri.</p><b>CONTINUOUS CARE →</b></article>
-          <article class="service-card reveal" data-delay="120" data-tilt><span class="service-no">09</span><i>◫</i><h3>Mobil Uyum</h3><p>Telefon, tablet ve masaüstünde okunabilir, erişilebilir, hızlı ve tutarlı kalan responsive arayüz sistemleri.</p><b>RESPONSIVE UI →</b></article>
-        </div>
-
-        <div class="solution-suite reveal" aria-labelledby="solutionTitle">
-          <div class="solution-suite-head">
-            <div><span class="eyebrow">ÇÖZÜM PAKETLERİ</span><h3 id="solutionTitle">İhtiyacına göre doğru başlangıç.</h3></div>
-            <p>Hazır kalıplar yerine projenin hedeflerine göre şekillenen net kapsamlar. Canlı konfigüratörde seçtiğin özellikler tek toplam fiyat olarak anında hesaplanır.</p>
-          </div>
-          <div class="solution-grid">
-            <article class="solution-card">
-              <span class="solution-index">01</span><small>STARTER</small><h4>Dijital Başlangıç</h4>
-              <p>Kişisel marka, portföy veya tek amaçlı tanıtım sayfası için hızlı ve güçlü başlangıç.</p><div class="solution-price"><strong>17.900 TL</strong><span>başlangıç</span></div>
-              <ul><li>Özel arayüz tasarımı</li><li>Mobil uyum</li><li>Temel SEO kurulumu</li><li>Alan adı ve yayın desteği</li></ul>
-              <a href="#contact">PROJEYİ PLANLA <span>→</span></a>
-            </article>
-            <article class="solution-card is-featured">
-              <span class="solution-badge">EN ÇOK TERCİH EDİLEN</span><span class="solution-index">02</span><small>BUSINESS</small><h4>Marka Deneyimi</h4>
-              <p>Kurumsal güveni güçlendiren, hizmetleri anlatan ve ziyaretçiyi iletişime yönlendiren kapsamlı web sitesi.</p><div class="solution-price"><strong>29.900 TL</strong><span>başlangıç</span></div>
-              <ul><li>Çok sayfalı yapı</li><li>Premium marka dili</li><li>İletişim ve teklif akışları</li><li>Bakım ve güncelleme altyapısı</li></ul>
-              <a href="#contact">PROJEYİ PLANLA <span>→</span></a>
-            </article>
-            <article class="solution-card">
-              <span class="solution-index">03</span><small>CUSTOM SYSTEM</small><h4>Özel Dijital Sistem</h4>
-              <p>Üyelik, takip, yönetim ve veri altyapısı gerektiren işletmeye özel çalışan ürünler.</p><div class="solution-price"><strong>84.900 TL</strong><span>başlangıç</span></div>
-              <ul><li>Üyelik ve güvenli giriş</li><li>Admin / müşteri paneli</li><li>Supabase veritabanı</li><li>Yetkilendirme ve özel akışlar</li></ul>
-              <a href="#contact">SİSTEMİ KONUŞALIM <span>→</span></a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad expertise-section" id="expertise">
-      <div class="container expertise-shell reveal">
-        <div class="expertise-head">
-          <span class="section-no">04</span>
-          <span class="eyebrow">E-E-A-T · KALİTE · TEKNİK DERİNLİK</span>
-          <h2>Güzel görünen değil,<br><span class="gradient-text">güven veren ve çalışan sistem.</span></h2>
-          <p>Her projede yalnızca arayüz değil; kullanıcı niyeti, sayfa mimarisi, teknik SEO, performans optimizasyonu, erişilebilirlik ve güvenlik standartları birlikte ele alınır.</p>
-        </div>
-        <div class="expertise-grid">
-          <article>
-            <small>01 · USER INTENT</small>
-            <h3>Kullanıcı niyetine göre sayfa akışı</h3>
-            <p>Bir ziyaretçinin bilgi almak, fiyat görmek, randevu oluşturmak veya teklif istemek için geldiğini ayırt eden net yönlendirmeler tasarlanır.</p>
-            <ul><li>Hizmet sayfası kurgusu</li><li>Teklif ve WhatsApp akışları</li><li>Randevu / başvuru dönüşümü</li></ul>
-          </article>
-          <article>
-            <small>02 · TECHNICAL SEO</small>
-            <h3>Arama motorları için anlaşılır yapı</h3>
-            <p>Başlık hiyerarşisi, meta açıklama, canonical, sitemap, robots.txt, görsel alt metinleri ve yapılandırılmış veri temiz şekilde hazırlanır.</p>
-            <ul><li>H1 / H2 / H3 düzeni</li><li>LocalBusiness ve Service schema</li><li>SEO dostu içerik mimarisi</li></ul>
-          </article>
-          <article>
-            <small>03 · PERFORMANCE</small>
-            <h3>Hız ve mobil deneyim önceliği</h3>
-            <p>Mobil kullanıcılar için hafif, okunabilir ve hızlı çalışan arayüz hedeflenir. Görseller, animasyonlar ve kod yapısı performans düşünülerek düzenlenir.</p>
-            <ul><li>Mobil öncelikli tasarım</li><li>Görsel optimizasyonu</li><li>Daha temiz kod akışı</li></ul>
-          </article>
-          <article>
-            <small>04 · TRUST</small>
-            <h3>Güvenlik, şeffaflık ve teslim düzeni</h3>
-            <p>Admin panel, üyelik ve veri içeren projelerde erişim mantığı, yetki ayrımı, KVKK bilgilendirmesi ve teslim süreci açık şekilde planlanır.</p>
-            <ul><li>Rol bazlı admin sistemi</li><li>Gizlilik ve kullanım metinleri</li><li>Yazılı kapsam ve revize sınırı</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-terms-section section-pad" id="working-terms">
-      <div class="container">
-        <div class="trust-terms-shell reveal">
-          <div class="trust-terms-head">
-            <div><span class="eyebrow">ÇALIŞMA & ÖDEME DÜZENİ</span><h2>Şeffaf kapsam,<br><span class="gradient-text">kontrollü proje süreci.</span></h2></div>
-            <p>Her proje başlamadan önce kapsam, teslim planı, revize sınırı ve ödeme adımları yazılı olarak netleştirilir.</p>
-          </div>
-          <div class="trust-terms-grid">
-            <article><span>01</span><i>%40</i><h3>Başlangıç</h3><p>Teklif ve kapsam onayından sonra proje takvimi başlangıç ödemesiyle açılır.</p></article>
-            <article><span>02</span><i>%30</i><h3>Tasarım Onayı</h3><p>Ana arayüz ve görsel yön onaylandığında ikinci ödeme gerçekleştirilir.</p></article>
-            <article><span>03</span><i>%30</i><h3>Yayın Öncesi</h3><p>Son kontroller tamamlanır; kalan ödeme sonrasında canlı yayın ve teslim yapılır.</p></article>
-            <article><span>04</span><i>2–4</i><h3>Hafta Ortalama</h3><p>Kurumsal sitelerde genel teslim aralığıdır; özel sistemlerde kapsam belirleyicidir.</p></article>
-            <article><span>05</span><i>NET</i><h3>Revize Kapsamı</h3><p>Dahil revizeler teklifte belirtilir; yeni özellik ve kapsam değişiklikleri ayrıca planlanır.</p></article>
-            <article><span>06</span><i>+</i><h3>Yayın Sonrası</h3><p>Teknik destek süresi teklifte yazılır; devam eden bakım isteğe bağlıdır.</p></article>
-          </div>
-          <div class="trust-terms-footer">
-            <p>Alan adı, ücretli lisanslar, e-posta, ödeme sağlayıcıları ve üçüncü taraf servis bedelleri aksi belirtilmedikçe proje fiyatına dahil değildir.</p>
-            <a href="hizmet-ve-odeme-kosullari.html">TÜM KOŞULLARI İNCELE <span>↗</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-section section-pad" id="faq">
-      <div class="container faq-layout">
-        <div class="faq-intro reveal">
-          <span class="eyebrow">SIK SORULAN SORULAR</span>
-          <h2>Karar vermeden önce<br><span class="gradient-text">bilmeniz gerekenler.</span></h2>
-          <p>Proje başlangıcı, ödeme, teslim, revize, SEO altyapısı, performans ve teknik yönetim hakkında en çok sorulan sorular.</p>
-          <a class="button button-secondary" href="#contact">BAŞKA BİR SORUM VAR <span>↗</span></a>
-        </div>
-        <div class="faq-list reveal" data-delay="80">
-          <details open><summary><span>01</span><b>Bir web projesine nasıl başlanır?</b><i></i></summary><p>Ön görüşmede projenin amacı, hedef kitlesi, sayfa yapısı, görsel beklentisi ve teknik ihtiyaçları netleştirilir. Ardından kapsam, süre ve ödeme planını içeren yazılı teklif hazırlanır.</p></details>
-          <details><summary><span>02</span><b>Ödeme planı nasıl uygulanır?</b><i></i></summary><p>Standart akış %40 başlangıç, %30 tasarım onayı ve %30 yayın öncesidir. Projenin yapısı farklı bir ödeme planı gerektiriyorsa bu durum yazılı teklifte açıkça belirtilir.</p></details>
-          <details><summary><span>03</span><b>Kaç revize dahildir?</b><i></i></summary><p>Revize sayısı ve revizenin hangi aşamaları kapsadığı teklifte yer alır. Onaylanan kapsamın dışındaki yeni sayfa, özellik veya tasarım yönü değişiklikleri ek çalışma olarak değerlendirilir.</p></details>
-          <details><summary><span>04</span><b>Alan adı ve hosting fiyata dahil mi?</b><i></i></summary><p>Aksi belirtilmedikçe alan adı, ücretli hosting, kurumsal e-posta, lisans ve üçüncü taraf servis bedelleri müşteriye aittir. Uygun projelerde GitHub Pages ve ücretsiz HTTPS gibi maliyetsiz çözümler kurulabilir.</p></details>
-          <details><summary><span>05</span><b>Projenin teslim süresi ne kadar?</b><i></i></summary><p>Kurumsal web siteleri genellikle 2–4 hafta içinde tamamlanır. Üyelik, veritabanı, admin paneli veya takip sistemi içeren projelerde teslim süresi kapsam ve geri bildirim hızına göre belirlenir.</p></details>
-          <details><summary><span>06</span><b>Site tesliminden sonra destek var mı?</b><i></i></summary><p>Teklifte belirtilen yayın sonrası destek döneminde teknik kontroller sağlanır. Düzenli içerik güncellemeleri, performans kontrolleri ve sistem bakımı ayrıca bakım paketiyle sürdürülebilir.</p></details>
-          <details><summary><span>07</span><b>Daha sonra yeni özellik eklenebilir mi?</b><i></i></summary><p>Evet. Altyapı uygun olduğu sürece yeni sayfalar, blog, randevu, üyelik, admin paneli, veritabanı veya ödeme entegrasyonu ayrı bir geliştirme kapsamıyla eklenebilir.</p></details>
-          <details><summary><span>08</span><b>Proje dosyaları ve erişimler kime ait olur?</b><i></i></summary><p>Tam ödeme tamamlandıktan sonra teklifte belirtilen proje dosyaları ve müşteri adına açılan hesap erişimleri teslim edilir. Üçüncü taraf servislerin kendi lisans ve kullanım koşulları ayrıca geçerlidir.</p></details>
-        <details><summary><span>09</span><b>SEO çalışması projeye nasıl dahil edilir?</b><i></i></summary><p>Temel kurulumda başlık yapısı, meta açıklamalar, mobil uyum, sitemap, robots.txt, canonical ve Search Console hazırlığı yapılır. Daha geniş SEO çalışmaları için hizmet sayfaları, içerik planı ve düzenli performans takibi ayrıca planlanır.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad reviews-section" id="reviews">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div><span class="section-no">05</span><span class="eyebrow">MÜŞTERİ DENEYİMLERİ</span><h2>Güven, yalnızca tasarımla değil,<br><span class="gradient-text">gerçek deneyimlerle oluşur.</span></h2></div>
-          <p>Bu alanda yalnızca gerçek proje sahiplerinin açık onayıyla paylaşılan doğrulanmış yorumlar yayınlanır.</p>
-        </div>
-        <div class="reviews-shell reveal">
-          <article class="reference-spotlight">
-            <div class="reference-top"><span><i></i> DOĞRULANMIŞ REFERANS</span><b>001</b></div>
-            <div class="reference-brand"><span>BER</span><strong>CAN’T</strong></div>
-            <h3>Ber Can’t Premium Online Coaching</h3>
-            <p>Online koçluk platformunun marka dili, arayüz tasarımı, geliştirme ve yayına alma süreci EB Digital Studio tarafından uçtan uca gerçekleştirildi.</p>
-            <div class="reference-meta"><span>Web Design</span><span>Membership</span><span>Dashboard</span><span>Supabase</span></div>
-            <div class="reference-actions"><a href="case-study-bercant.html">VAKA ÇALIŞMASINI İNCELE <span>↗</span></a><a href="https://bercant.com.tr" target="_blank" rel="noopener">CANLI PROJE</a></div>
-          </article>
-          <article class="review-panel">
-            <div class="review-panel-head"><span class="quote-mark">“</span><div><small>CLIENT VOICE SYSTEM</small><h3>Doğrulanmış yorum paneli hazır.</h3></div></div>
-            <p class="review-empty-copy">İlk müşteri yorumu geldiğinde burada isim, marka, proje türü ve onaylı değerlendirme ile yayınlanacak. Sahte yorum veya yapay puan kullanılmaz.</p>
-            <div class="review-policy">
-              <span><i>✓</i><b>Gerçek proje sahibi</b><small>Kimlik ve proje eşleştirmesi</small></span>
-              <span><i>✓</i><b>Yayın onayı</b><small>Müşterinin açık izni</small></span>
-              <span><i>✓</i><b>Manuel kontrol</b><small>Spam ve yanıltıcı içerik yok</small></span>
-            </div>
-            <button class="button button-primary magnetic" type="button" data-review-open aria-controls="reviewDialog" aria-haspopup="dialog">YORUMUNU PAYLAŞ <span>↗</span></button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad about-section" id="about">
-      <div class="container about-grid">
-        <div class="about-gallery reveal">
-          <figure class="story-main" data-tilt><img src="assets/portrait-story.webp" alt="Efecan Berber masa başında" width="998" height="1500" loading="lazy"></figure>
-          <figure class="story-secondary"><img src="assets/portrait-lifestyle.webp" alt="Efecan Berber yaşam tarzı portresi" width="998" height="1500" loading="lazy"></figure>
-          <div class="about-badges"><span>INDEPENDENT</span><span>WEB DESIGNER</span><span>DEVELOPER</span></div>
-        </div>
-        <div class="about-copy reveal" data-delay="90">
-          <span class="section-no">06</span><span class="eyebrow">BEN KİMİM?</span>
-          <h2>Kendi yolunu<br><span class="gradient-text">üreterek çizen biri.</span></h2>
-          <p>Ben Efecan Berber. Bilgisayar programcılığı eğitimine başladım; ancak kısa sürede teknolojide ilerlemenin yalnızca sınıfla sınırlı olmadığını gördüm. Bu yüzden öğrenme sürecimi gerçek ihtiyaçlar, denemeler ve çalışan projeler üzerinden ilerlettim.</p>
-          <p>İlk gerçek çalışmam bir dostum için hazırladığım web sitesiydi. Bu proje, yalnızca tasarım üretmekten daha fazlasını yapabileceğimi gösterdi: alan adı kurulumu, mobil uyum, sayfa akışı, içerik düzeni ve kullanıcıyı iletişime yönlendiren dijital bir yapı kurmak.</p>
-          <p>Ber Can’t projesinde ise statik bir siteyi üyelik, koç paneli, öğrenci takibi ve veri altyapısı olan yönetilebilir bir online koçluk sistemine dönüştürdüm. Bugün EB Digital Studio’da her projeyi; kullanıcı deneyimi, teknik SEO, performans, güvenlik ve uzun vadeli yönetilebilirlik açısından ele alıyorum.</p>
-          <blockquote>“Her proje yalnızca teslim edilen bir site değil; markanın dijital dünyadaki karakteridir.”</blockquote>
-          <div class="signature">Efecan Berber</div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="journey-section section-pad" aria-labelledby="journeyTitle">
-      <div class="container">
-        <div class="journey-head reveal">
-          <span class="eyebrow">EFECAN BERBER · JOURNEY LOG</span>
-          <h2 id="journeyTitle">Bir kararın,<br><span class="gradient-text">dijital stüdyoya dönüşümü.</span></h2>
-        </div>
-        <div class="journey-track">
-          <article class="journey-step reveal"><b>01</b><small>BAŞLANGIÇ</small><h3>Bilgisayar programcılığı</h3><p>Yazılım ve web teknolojilerinin temelini öğrenirken üretmenin yalnızca derslerle sınırlı kalmaması gerektiğini fark ettim.</p></article>
-          <article class="journey-step reveal" data-delay="45"><b>02</b><small>KARAR</small><h3>Kendi yolunu seçmek</h3><p>Okula ara verip araştırma, deneme, hata çözme ve gerçek müşteri ihtiyaçları üzerinden ilerlemeyi seçtim.</p></article>
-          <article class="journey-step reveal" data-delay="90"><b>03</b><small>İLK ÜRÜN</small><h3>Dostum için ilk site</h3><p>İlk gerçek proje; tasarım, yayınlama, mobil uyum ve müşteri beklentisini anlama tarafındaki yeteneğimi somutlaştırdı.</p></article>
-          <article class="journey-step reveal" data-delay="135"><b>04</b><small>SİSTEM</small><h3>Ber Can’t dönüşümü</h3><p>Statik bir web sitesini üyelik, takip, rol yönetimi, admin paneli ve veritabanı altyapısı olan dijital ürüne dönüştürdüm.</p></article>
-          <article class="journey-step reveal" data-delay="180"><b>05</b><small>BUGÜN</small><h3>EB Digital Studio</h3><p>Markalara özel web deneyimleri, SEO temeli güçlü sayfa yapıları ve çalışan dijital sistemler geliştiriyorum.</p></article>
-          <article class="journey-step reveal" data-delay="225"><b>06</b><small>HEDEF</small><h3>Bağımsız dijital ajans</h3><p>Yaratıcı fikirleri hızlı, güvenli, ölçülebilir ve profesyonel dijital ürünlere dönüştüren bağımsız bir ajans kurmak.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad tech-section">
-      <div class="container tech-grid">
-        <div class="tech-copy reveal"><span class="section-no">07</span><span class="eyebrow">TEKNOLOJİ</span><h2>Tasarım kadar<br><span class="gradient-text">altyapı da güçlü.</span></h2><p>Her araç bir amaç için kullanılır: daha hızlı yüklenmek, daha kolay yönetilmek, arama motorları tarafından daha iyi anlaşılmak ve daha güvenli çalışmak.</p><div class="tech-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Supabase</span><span>GitHub</span><span>Responsive UI</span><span>Authentication</span><span>Database</span><span>Technical SEO</span><span>Performance</span><span>Accessibility</span><span>Security</span></div></div>
-        <div class="orbit reveal" data-delay="100" aria-label="Teknoloji yörüngesi"><div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div><div class="orbit-ring ring-c"></div><div class="orbit-core"><img src="assets/logo-ocean.svg" data-theme-logo alt="EB Digital Studio logo"></div><span class="node n1">HTML</span><span class="node n2">CSS</span><span class="node n3">JS</span><span class="node n4">UI</span><span class="node n5">DB</span><span class="node n6">AUTH</span><span class="node n7">GIT</span><span class="node n8">UX</span></div>
-      </div>
-    </section>
-
-    <section class="section-pad process-section" id="process">
-      <div class="container">
-        <div class="section-heading reveal"><div><span class="section-no">08</span><span class="eyebrow">ÇALIŞMA SÜRECİ</span><h2>Belirsizliği azaltan,<br><span class="gradient-text">net bir yol haritası.</span></h2></div><p>Her proje amacı, kullanıcıyı ve teknik ihtiyaçları anlayarak başlar. Sonuç tesadüfe bırakılmaz.</p></div>
-        <div class="process-track">
-          <article class="process-step reveal"><span>01</span><small>KEŞİF</small><h3>İhtiyacı anlama</h3><p>Hedef kitle, kullanıcı niyeti, rakip görünümü, sayfa ihtiyacı ve dönüşüm hedefi netleştirilir.</p></article>
-          <article class="process-step reveal" data-delay="45"><span>02</span><small>STRATEJİ</small><h3>Doğru yapıyı kurma</h3><p>Sayfa mimarisi, başlık hiyerarşisi, SEO hedefleri, kullanıcı akışı ve teknik altyapı planlanır.</p></article>
-          <article class="process-step reveal" data-delay="90"><span>03</span><small>TASARIM</small><h3>Kimliği deneyime çevirme</h3><p>Renk, tipografi, hareket ve arayüz sistemi hazırlanır.</p></article>
-          <article class="process-step reveal" data-delay="135"><span>04</span><small>GELİŞTİRME</small><h3>Tasarıma hayat verme</h3><p>Temiz HTML, modern CSS, JavaScript etkileşimleri, form akışları ve gerekirse Supabase altyapısı kurulur.</p></article>
-          <article class="process-step reveal" data-delay="180"><span>05</span><small>TEST</small><h3>Her ayrıntıyı doğrulama</h3><p>Mobil görünüm, bağlantılar, formlar, hız, temel erişilebilirlik, meta veriler ve kritik kullanıcı akışları kontrol edilir.</p></article>
-          <article class="process-step reveal" data-delay="225"><span>06</span><small>YAYIN</small><h3>Projeyi dünyaya açma</h3><p>Alan adı, HTTPS, canonical, sitemap, robots.txt ve Search Console hazırlığıyla yayın süreci tamamlanır.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad contact-section" id="contact">
-      <div class="container contact-shell reveal">
-        <div class="contact-head"><div><span class="section-no">09</span><span class="eyebrow">PROJE SİHİRBAZI</span><h2>Fikrini anlat,<br><span class="gradient-text">birlikte şekillendirelim.</span></h2><p>Kısa formu doldur. Bilgilerin hazır WhatsApp mesajına dönüşsün ve projen için doğrudan iletişime geç.</p></div><div class="direct-contact"><a href="tel:+905425866513"><small>TELEFON</small><strong>0542 586 65 13</strong></a><a href="mailto:efecanberber0@gmail.com"><small>E-POSTA</small><strong>efecanberber0@gmail.com</strong></a><a href="https://www.instagram.com/ebdigitalstudioffical/" target="_blank" rel="noopener noreferrer"><small>INSTAGRAM</small><strong>@ebdigitalstudioffical ↗</strong></a></div></div>
-        <form id="proposalForm" class="proposal-form">
-          <input type="hidden" name="labPrice" value="">
-          <input type="hidden" name="labConfig" value="">
-          <label><span>Adınız / marka adınız</span><input name="name" autocomplete="name" required placeholder="Örn. ABC Mimarlık"></label>
-          <label><span>Proje türü</span><select name="type" required><option value="">Seçiniz</option><option>Kurumsal web sitesi</option><option>Kişisel portföy</option><option>Üyelik ve giriş sistemi</option><option>Öğrenci / müşteri takip paneli</option><option>Admin paneli</option><option>Site bakım ve güncelleme</option><option>Diğer</option></select></label>
-          <label><span>Sayfa sayısı</span><select name="pages"><option>1–3 sayfa</option><option>4–7 sayfa</option><option>8+ sayfa</option><option>Henüz belli değil</option></select></label>
-          <label><span>Teslim beklentisi</span><select name="deadline"><option>Esnek</option><option>2–4 hafta</option><option>1–2 ay</option><option>Acil</option></select></label>
-          <fieldset><legend>Gerekli özellikler</legend><label><input type="checkbox" name="feature" value="Mobil uyum"><span>Mobil uyum</span></label><label><input type="checkbox" name="feature" value="Üyelik sistemi"><span>Üyelik sistemi</span></label><label><input type="checkbox" name="feature" value="Admin paneli"><span>Admin paneli</span></label><label><input type="checkbox" name="feature" value="Veritabanı"><span>Veritabanı</span></label><label><input type="checkbox" name="feature" value="Alan adı kurulumu"><span>Alan adı kurulumu</span></label><label><input type="checkbox" name="feature" value="Bakım desteği"><span>Bakım desteği</span></label></fieldset>
-          <label class="full"><span>Projenizi kısaca anlatın</span><textarea name="details" rows="5" placeholder="Markanız, hedefiniz ve ihtiyaç duyduğunuz özellikler..."></textarea></label>
-          <div class="form-footer"><p>Form herhangi bir sunucuya veri göndermez; yalnızca cihazınızda WhatsApp mesajı hazırlar.</p><button class="button button-primary magnetic" type="submit">WHATSAPP'TAN TEKLİF İSTE <span>↗</span></button></div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid"><div class="footer-brand"><a class="brand" href="#top"><img src="assets/logo-ocean.svg" data-theme-logo alt=""><span><strong>EB DIGITAL STUDIO</strong><small>BY EFECAN BERBER</small></span></a><p>Markalar için dijital karakter, güçlü arayüz ve çalışan sistemler.</p></div><div><small>HIZLI MENÜ</small><a href="#work">Projeler</a><a href="#lab">Design Lab</a><a href="#services">Hizmetler</a><a href="#faq">SSS</a><a href="#reviews">Yorumlar</a><a href="#contact">Teklif</a><a href="gizlilik-politikasi.html">Gizlilik</a><a href="hizmet-ve-odeme-kosullari.html">Hizmet Koşulları</a></div><div><small>İLETİŞİM</small><a href="tel:+905425866513">0542 586 65 13</a><a href="mailto:efecanberber0@gmail.com">efecanberber0@gmail.com</a><a href="https://www.instagram.com/ebdigitalstudioffical/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div><a class="to-top" href="#top">YUKARI ↑</a></div>
-    <div class="container footer-bottom"><span>© <b id="year"></b> EB Digital Studio. Tüm hakları saklıdır.</span><span class="footer-legal-links"><a href="gizlilik-politikasi.html">Gizlilik Politikası</a><a href="hizmet-ve-odeme-kosullari.html">Hizmet ve Ödeme Koşulları</a></span></div>
-  </footer>
-
-  <div class="eb-ai-assistant eb-ai-elite" id="ebAiAssistant" data-ai-version="6.3">
-    <button class="eb-ai-fab" type="button" data-assistant-open aria-label="EB Asistanı aç">
-      <span class="eb-ai-orb"><i></i><b>AI</b></span>
-      <span><b>EB CROWN AI</b><small>PROJE ASİSTANI</small></span>
-      <em>V6.2</em>
-    </button>
-    <section class="eb-ai-panel" data-ai-panel role="dialog" aria-modal="false" aria-hidden="true" aria-labelledby="ebAiTitle">
-      <div class="eb-ai-head">
-        <div class="eb-ai-head-title">
-          <span class="eb-ai-orb"><i></i><b>AI</b></span>
-          <div>
-            <h2 id="ebAiTitle">EB Crown AI</h2>
-            <p>Siteye uyumlu kompakt satış zekâsı · proje analizi · teklif yönlendirme</p>
-          </div>
-        </div>
-        <div class="eb-ai-head-actions">
-          <button class="eb-ai-mini" type="button" data-ai-action="export" title="Konuşma özetini kopyala">ÖZET</button>
-          <button class="eb-ai-close" type="button" data-assistant-close aria-label="EB Asistanı kapat">×</button>
-        </div>
-      </div>
-      <div class="eb-ai-status" aria-label="Asistan durumu">
-        <span><b data-ai-state-sector>SEKTÖR</b><small>bekleniyor</small></span>
-        <span><b data-ai-state-package>PAKET</b><small>analiz yok</small></span>
-        <span><b data-ai-state-price>FİYAT</b><small>ön teklif yok</small></span>
-      </div>
-      <div class="eb-ai-main">
-        <div class="eb-ai-messages" data-ai-messages aria-live="polite"></div>
-        <aside class="eb-ai-intel" data-ai-intel>
-          <div class="eb-ai-intel-card">
-            <small>CANLI ANALİZ</small>
-            <strong data-ai-score>0%</strong>
-            <span>Proje netlik skoru</span>
-          </div>
-          <div class="eb-ai-intel-list" data-ai-intel-list>
-            <p>İşletme türü, hedef ve özellikler seçildikçe öneri güçlenir.</p>
-          </div>
-        </aside>
-      </div>
-      <div class="eb-ai-quick" data-ai-quick></div>
-      <form class="eb-ai-input" data-ai-form>
-        <input data-ai-input type="text" autocomplete="off" placeholder="Örn. Güzellik merkezim için lüks tasarım, randevu, yorum paneli, kampanya, hizmet sayfaları, KVKK ve Google SEO istiyorum...">
-        <button type="submit" aria-label="Mesaj gönder">↗</button>
-      </form>
-      <div class="eb-ai-foot"><span>Crown AI</span><span>API maliyeti yok</span><span>Kompakt mod</span><span>Teklif üretir</span></div>
-    </section>
-  </div>
-
-  <button class="command-fab" type="button" data-command-open aria-label="EB Command Center">
-    <span>⌘</span><strong>COMMAND</strong><kbd>CTRL K</kbd>
-  </button>
-
-  <div class="review-dialog" id="reviewDialog" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="reviewDialogTitle">
-    <button class="review-dialog-backdrop" type="button" data-review-close aria-label="Yorum penceresini kapat"></button>
-    <form class="review-dialog-shell" id="reviewForm">
-      <div class="review-dialog-head">
-        <div><span class="eyebrow">DOĞRULANMIŞ MÜŞTERİ YORUMU</span><h2 id="reviewDialogTitle">Deneyimini paylaş.</h2></div>
-        <button type="button" class="icon-button" data-review-close aria-label="Yorum penceresini kapat">×</button>
-      </div>
-      <p>Bilgileriniz otomatik yayınlanmaz. WhatsApp üzerinden EB Digital Studio’ya iletilir ve yalnızca açık onayınızla sitede paylaşılır.</p>
-      <div class="review-form-grid">
-        <label><span>Ad soyad</span><input name="reviewer" required autocomplete="name" placeholder="Adınız Soyadınız"></label>
-        <label><span>Marka / işletme</span><input name="brand" required placeholder="Marka veya proje adı"></label>
-        <label><span>Proje türü</span><select name="project"><option>Kurumsal web sitesi</option><option>Kişisel portföy</option><option>Üyelik / giriş sistemi</option><option>Admin / takip paneli</option><option>Bakım ve güncelleme</option><option>Diğer</option></select></label>
-        <label><span>Değerlendirme</span><select name="rating"><option value="5">5 — Mükemmel</option><option value="4">4 — Çok iyi</option><option value="3">3 — İyi</option><option value="2">2 — Geliştirilebilir</option><option value="1">1 — Memnun kalmadım</option></select></label>
-        <label class="full"><span>Yorumunuz</span><textarea name="comment" required rows="5" maxlength="800" placeholder="Proje süreci, iletişim, tasarım ve sonuç hakkındaki deneyiminiz..."></textarea></label>
-        <label class="review-consent full"><input type="checkbox" name="consent" required><span>Bu yorumun adım ve marka bilgimle EB Digital Studio sitesinde yayınlanmasına izin veriyorum.</span></label>
-      </div>
-      <div class="review-dialog-footer"><small>Gönderim WhatsApp üzerinden gerçekleşir.</small><button class="button button-primary" type="submit">YORUMU GÖNDER <span>↗</span></button></div>
-    </form>
-  </div>
-
-  <div class="command-center" id="commandCenter" aria-hidden="true">
-    <div class="command-backdrop" data-command-close></div>
-    <section class="command-panel" role="dialog" aria-modal="true" aria-labelledby="commandTitle">
-      <div class="command-head">
-        <div><span class="os-pulse"></span><strong id="commandTitle">EB COMMAND CENTER</strong></div>
-        <kbd>ESC</kbd>
-      </div>
-      <label class="command-search">
-        <span>⌕</span>
-        <input type="search" placeholder="Bir komut yaz: proje, tema, iletişim..." autocomplete="off" data-command-search>
-      </label>
-      <div class="command-list" data-command-list>
-        <button type="button" data-command="navigate" data-target="#work"><i>01</i><span><b>Projeleri görüntüle</b><small>Öne çıkan çalışmalara git</small></span><kbd>P</kbd></button>
-        <button type="button" data-command="navigate" data-target="#lab"><i>02</i><span><b>Canlı Design Lab</b><small>Kendi konseptini oluştur</small></span><kbd>L</kbd></button>
-        <button type="button" data-assistant-open><i>AI</i><span><b>EB Asistan</b><small>Satış zekâsı ve proje analizi</small></span><kbd>A</kbd></button>
-        <a href="case-study-bercant.html"><i>03</i><span><b>Ber Can’t vaka çalışması</b><small>Önce ve sonrası incele</small></span><kbd>B</kbd></a>
-        <button type="button" data-command="theme"><i>04</i><span><b>Atmosferi değiştir</b><small>Altı signature tema</small></span><kbd>T</kbd></button>
-        <button type="button" data-command="navigate" data-target="#reviews"><i>05</i><span><b>Müşteri deneyimleri</b><small>Referans ve yorum paneli</small></span><kbd>Y</kbd></button>
-        <button type="button" data-command="navigate" data-target="#about"><i>06</i><span><b>Efecan kimdir?</b><small>Hikâyeyi görüntüle</small></span><kbd>H</kbd></button>
-        <button type="button" data-command="navigate" data-target="#faq"><i>07</i><span><b>Sık sorulan sorular</b><small>Ödeme, teslim ve revize bilgileri</small></span><kbd>S</kbd></button>
-        <button type="button" data-command="navigate" data-target="#contact"><i>08</i><span><b>Proje başlat</b><small>Teklif sihirbazını aç</small></span><kbd>N</kbd></button>
-        <a href="hizmet-ve-odeme-kosullari.html"><i>09</i><span><b>Hizmet koşulları</b><small>Çalışma ve ödeme düzeni</small></span><kbd>K</kbd></a>
-        <a href="https://wa.me/905425866513" target="_blank" rel="noopener"><i>10</i><span><b>WhatsApp</b><small>Doğrudan iletişime geç</small></span><kbd>W</kbd></a>
-        <a href="mailto:efecanberber0@gmail.com"><i>11</i><span><b>E-posta gönder</b><small>efecanberber0@gmail.com</small></span><kbd>E</kbd></a>
-        <a href="https://www.instagram.com/ebdigitalstudioffical/" target="_blank" rel="noopener noreferrer"><i>12</i><span><b>Instagram</b><small>@ebdigitalstudioffical</small></span><kbd>I</kbd></a>
-      </div>
-      <footer><span>↑↓ Gez</span><span>ENTER Seç</span><span>CTRL K Aç/Kapat</span></footer>
-    </section>
-  </div>
-
-  <script src="js/app.js?v=5.6" defer></script>
-  <script src="js/experience.js?v=5.6" defer></script>
-  <script src="js/ai-assistant.js?v=6.2" defer></script>
+    <div style="margin-top:12px">
+      <span class="tag high">${esc(l.priority)}</span>
+      <span class="tag">${esc(l.status)}</span>
+      <span class="tag">${esc(l.package)}</span>
+    </div>
+    <div class="meta">
+      <div><small>Telefon</small><a href="${tel ? `tel:${tel}` : '#'}">${esc(l.phone)}</a></div>
+      <div><small>Önerilen çözüm</small>${esc(l.solution)}</div>
+    </div>
+    <div class="copy"><strong>Neden potansiyel?</strong><br>${esc(l.reason)}</div>
+    <div class="actions">
+      ${wa ? `<a class="primary" target="_blank" rel="noopener" href="https://wa.me/${wa}?text=${message}">WhatsApp</a>` : ""}
+      ${tel ? `<a href="tel:${tel}">Ara</a>` : ""}
+      ${l.instagram ? `<a target="_blank" rel="noopener" href="${esc(l.instagram)}">Instagram</a>` : ""}
+      <a target="_blank" rel="noopener" href="${esc(l.source)}">Kaynak</a>
+    </div>
+    <div class="crm">
+      <select class="control crm-status" data-name="${esc(l.name)}">
+        ${["Yeni","İletişime Geçildi","Takip","İlgileniyor","Kazanıldı","Uygun Değil"].map(x=>`<option ${x===crm?"selected":""}>${x}</option>`).join("")}
+      </select>
+      <textarea class="control note" data-name="${esc(l.name)}" placeholder="Görüşme notu…">${esc(note)}</textarea>
+    </div>
+  </article>`;
+}
+function render(){
+  const q=search.value.toLocaleLowerCase("tr");
+  const items=leads.filter(l=>{
+    const st=(saved[l.name]?.status||"Yeni");
+    const hay=[l.name,l.category,l.address,l.phone,l.reason,l.solution].join(" ").toLocaleLowerCase("tr");
+    return (!q||hay.includes(q)) && (!category.value||l.category===category.value) && (!priority.value||l.priority===priority.value) && (!crmFilter.value||st===crmFilter.value);
+  });
+  grid.innerHTML=items.map(card).join("");
+  document.getElementById("resultCount").textContent=`${items.length} işletme`;
+  empty.style.display=items.length?"none":"block";
+  document.querySelectorAll(".crm-status").forEach(el=>el.addEventListener("change",e=>saveState(e.target.dataset.name,"status",e.target.value)));
+  document.querySelectorAll(".note").forEach(el=>el.addEventListener("input",e=>saveState(e.target.dataset.name,"note",e.target.value)));
+}
+[search,category,priority,crmFilter].forEach(x=>x.addEventListener("input",render));
+document.getElementById("exportBtn").addEventListener("click",()=>{
+  const rows=[["İşletme","Kategori","Telefon","Adres","Puan","Öncelik","CRM Durumu","Not","Önerilen Çözüm","Kaynak"]];
+  leads.forEach(l=>rows.push([l.name,l.category,l.phone,l.address,l.score,l.priority,saved[l.name]?.status||"Yeni",saved[l.name]?.note||"",l.solution,l.source]));
+  const csv=rows.map(r=>r.map(v=>`"${String(v).replaceAll('"','""')}"`).join(",")).join("\n");
+  const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="nigde-lead-takip.csv"; a.click(); URL.revokeObjectURL(a.href);
+});
+render(); updateStats();
+</script>
 </body>
 </html>
